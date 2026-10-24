@@ -34,15 +34,15 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", path: "/" },
+    { label: "Acasă", path: "/" },
     {
-      label: "Restaurants",
+      label: "Restaurante",
       subNav: [
         { label: "Lookout Beach", path: "/lookout-beach" },
         { label: "Cafe Beach", path: "/cafe-beach" },
       ],
     },
-    { label: "Menus", path: "/#our-menus", isHash: true },
+    { label: "Meniuri", path: "/#our-menus", isHash: true },
     // {
     //   label: "Wedding Ceremony",
     //   subNav: [
@@ -51,15 +51,15 @@ const Header = () => {
     //   ],
     // },
     {
-      label: "Events",
+      label: "Evenimente",
       subNav: [
-        { label: "Weddings", path: "/events/weddings" },
-        { label: "Corporate Galas", path: "/events/corporate" },
-        { label: "Art & Fashion", path: "/events/art-fashion" },
-        { label: "Events Memories", path: "/events/memories" },
+        { label: "Nunți", path: "/events/weddings" },
+        { label: "Gale corporative", path: "/events/corporate" },
+        { label: "Artă și modă", path: "/events/art-fashion" },
+        { label: "Amintiri din evenimente", path: "/events/memories" },
       ],
     },
-    { label: "Contact Us", path: "/#contact-us", isHash: true },
+    { label: "Contact", path: "/#contact-us", isHash: true },
   ];
 
   const toggleSubmenu = (index, e) => {
@@ -191,7 +191,7 @@ const Header = () => {
             <Link to="/">
               <img
                 src={logo}
-                alt="Company Logo"
+                alt="Logo companie"
                 className="h-10 md:h-14 transition-all duration-300 hover:scale-105"
               />
             </Link>
@@ -258,13 +258,13 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Book Now
+              Rezervă acum
             </motion.button>
           </div>
 
           <motion.button
             className="lg:hidden text-gray-800 focus:outline-none"
-            aria-label="Toggle menu"
+            aria-label="Deschide/închide meniul"
             onClick={() => {
               setMobileMenuOpen(!mobileMenuOpen);
               setActiveSubmenu(null);
@@ -364,7 +364,7 @@ const Header = () => {
                   }}
                   className="w-full bg-gradient-to-r from-[#ff2709] to-[#ffaa13] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                 >
-                  Book Now
+                  Rezervă acum
                 </button>
               </motion.div>
             </div>

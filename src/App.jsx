@@ -82,7 +82,7 @@ const ScrollProgress = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <img
             src={logo}
-            alt="Progress"
+            alt="Progres"
             className="w-8 h-8 object-contain"
             style={{ transform: `rotate(${scrollProgress * 3.6}deg)` }}
           />
@@ -128,7 +128,7 @@ const RouteLoader = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-90">
       <div className="animate-pulse animate-bounce">
-        <img src={logo} alt="Loading..." className="w-32 h-32 object-contain" />
+        <img src={logo} alt="Se încarcă..." className="w-32 h-32 object-contain" />
         <div className="mt-4 flex justify-center space-x-2">
           <div
             className="w-3 h-3 bg-amber-500 rounded-full animate-bounce"

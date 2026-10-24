@@ -46,48 +46,48 @@ const MenuLists = () => {
   const menuItems = [
     {
       id: "food",
-      title: "Coastal Cuisine",
+      title: "Bucătărie de coastă",
       icon: <FaUtensils className="text-2xl" />,
       image: foodMenu,
-      description: "Fresh seafood and Mediterranean-inspired dishes",
+      description: "Fructe de mare proaspete și preparate de inspirație mediteraneană",
       featuredItems: [
-        "Starters: Tuna Tartare, Grilled Octopus",
-        "Mains: Lobster Risotto, Sea Bass en Papillote",
-        "Desserts: Passionfruit Cheesecake, Chocolate Lava Cake",
+        "Aperitive: Tartar de ton, Caracatiță la grătar",
+        "Feluri principale: Risotto cu homar, Biban de mare en papillote",
+        "Deserturi: Cheesecake cu fructul pasiunii, Lava cake cu ciocolată",
       ],
       fullItems: [
         {
           name: "Soupe à l'Oignon",
           description:
-            "A rich and hearty French onion soup made with caramelized onions, beef broth, and topped with toasted bread and melted Gruyère cheese. Perfect for chilly evenings.",
+            "O supă franțuzească de ceapă, bogată și consistentă, preparată cu ceapă caramelizată și supă de vită, servită cu pâine prăjită și brânză Gruyère topită. Perfectă pentru serile răcoroase.",
           icon: <FaUtensils />,
           image: onionSoupImg,
         },
         {
           name: "Salade de Chèvre Chaud",
           description:
-            "A warm goat cheese salad featuring toasted bread rounds topped with creamy chèvre, served over a bed of greens with a drizzle of honey or vinaigrette.",
+            "O salată caldă cu brânză de capră: felii de pâine prăjită cu chèvre cremos, servite pe un pat de verdețuri, stropite cu miere sau vinegretă.",
           icon: <FaUtensils />,
           image: goatCheeseImg,
         },
         {
           name: "Coq au Vin",
           description:
-            "A traditional French dish of chicken slowly braised in red wine with mushrooms, garlic, onions, and herbs comforting, flavorful, and deeply aromatic.",
+            "Un preparat tradițional franțuzesc de pui gătit lent în vin roșu, cu ciuperci, usturoi, ceapă și ierburi aromatice: reconfortant, savuros și intens aromat.",
           icon: <FaUtensils />,
           image: coqAuVinImg,
         },
         {
           name: "Boeuf Bourguignon",
           description:
-            "A slow-cooked beef stew originating from Burgundy, made with red wine, bacon, mushrooms, carrots, and onions. Rich and deeply satisfying.",
+            "O tocăniță de vită gătită lent, originară din Burgundia, preparată cu vin roșu, bacon, ciuperci, morcovi și ceapă. Bogată și foarte sățioasă.",
           icon: <FaUtensils />,
           image: beefBourguignonImg,
         },
         {
           name: "Ratatouille",
           description:
-            "A Provençal vegetable medley of zucchini, eggplant, peppers, tomatoes, and herbs light, colorful, and bursting with fresh garden flavors.",
+            "Un amestec provensal de legume, cu dovlecei, vinete, ardei, roșii și ierburi aromatice: ușor, colorat și plin de arome proaspete de grădină.",
           icon: <FaUtensils />,
           image: ratatouilleImg,
         },
@@ -95,41 +95,41 @@ const MenuLists = () => {
     },
     {
       id: "cocktails",
-      title: "Signature Cocktails",
+      title: "Cocktailuri de autor",
       icon: <FaCocktail className="text-2xl" />,
       image: cocktailMenu,
-      description: "Crafted with local ingredients and tropical flavors",
+      description: "Create cu ingrediente locale și arome tropicale",
       featuredItems: [
-        "LockOut Sunset: Rum, passionfruit, lime, coconut",
-        "Sea Breeze Martini: Gin, elderflower, cucumber, sea salt",
+        "LockOut Sunset: Rom, fructul pasiunii, lime, cocos",
+        "Sea Breeze Martini: Gin, soc, castravete, sare de mare",
         "Golden Sands: Tequila, mango, chili, lime",
       ],
       fullItems: [
         {
           name: "Kir Royal",
           description:
-            "A sophisticated blend of Champagne and crème de cassis — light, bubbly, and effortlessly elegant.",
+            "O combinație rafinată de șampanie și crème de cassis — ușoară, spumoasă și elegantă fără efort.",
           icon: <FaCocktail />,
           image: kirRoyalImg,
         },
         {
           name: "French 75",
           description:
-            "A sparkling cocktail containing gin, lemon juice, sugar, and Champagne. Crisp, citrusy, and refined.",
+            "Un cocktail spumant cu gin, suc de lămâie, zahăr și șampanie. Proaspăt, citric și rafinat.",
           icon: <FaCocktail />,
           image: french75Img,
         },
         {
           name: "Sidecar",
           description:
-            "Brandy, orange liqueur, and lemon juice shaken to perfection. Bold and balanced with a citrus kick.",
+            "Brandy, lichior de portocale și suc de lămâie, agitate la perfecție. Intens și echilibrat, cu o notă citrică.",
           icon: <FaCocktail />,
           image: sidecarImg,
         },
         {
           name: "Pastis",
           description:
-            "Anise-flavored liqueur served with water and ice — refreshing and distinctly French.",
+            "Lichior cu aromă de anason, servit cu apă și gheață — răcoritor și inconfundabil franțuzesc.",
           icon: <FaCocktail />,
           image: pastisImg,
         },
@@ -137,38 +137,38 @@ const MenuLists = () => {
     },
     {
       id: "wine",
-      title: "Wine Selection",
+      title: "Selecție de vinuri",
       icon: <FaWineGlassAlt className="text-2xl" />,
       image: wineMenu,
-      description: "Curated international and local wines",
+      description: "Vinuri internaționale și locale atent selecționate",
       featuredItems: [
-        "Whites: Chablis, Sauvignon Blanc, Albariño",
-        "Reds: Malbec, Pinot Noir, Châteauneuf-du-Pape",
-        "Sparkling: Prosecco, Champagne, Cava",
+        "Albe: Chablis, Sauvignon Blanc, Albariño",
+        "Roșii: Malbec, Pinot Noir, Châteauneuf-du-Pape",
+        "Spumante: Prosecco, Șampanie, Cava",
       ],
       fullItems: [
         {
           name: "Bordeaux",
           description:
-            "A blend of Merlot, Cabernet Sauvignon, and Cabernet Franc; bold and structured.",
+            "Un cupaj de Merlot, Cabernet Sauvignon și Cabernet Franc; intens și bine structurat.",
           icon: <FaWineBottle />,
           image: bordeauxImg,
         },
         {
-          name: "Burgundy (Pinot Noir)",
-          description: "Elegant and earthy with red fruit notes.",
+          name: "Burgundia (Pinot Noir)",
+          description: "Elegant și teros, cu note de fructe roșii.",
           icon: <FaWineBottle />,
           image: burgundyImg,
         },
         {
-          name: "Chablis (Burgundy)",
-          description: "Crisp, dry Chardonnay with mineral notes.",
+          name: "Chablis (Burgundia)",
+          description: "Chardonnay sec și proaspăt, cu note minerale.",
           icon: <FaWineBottle />,
           image: chablisImg,
         },
         {
-          name: "Sancerre (Loire Valley)",
-          description: "Zesty Sauvignon Blanc with citrus and herbal tones.",
+          name: "Sancerre (Valea Loarei)",
+          description: "Sauvignon Blanc vioi, cu tonuri citrice și ierboase.",
           icon: <FaWineBottle />,
           image: sancerreImg,
         },
@@ -176,41 +176,41 @@ const MenuLists = () => {
     },
     {
       id: "drinks",
-      title: "Beverages",
+      title: "Băuturi",
       icon: <MdOutlineRestaurant className="text-2xl" />,
       image: drinkMenu,
-      description: "Refreshing non-alcoholic options",
+      description: "Opțiuni răcoritoare fără alcool",
       featuredItems: [
-        "Fresh Juices: Watermelon, Pineapple, Orange",
-        "Signature Mocktails: Virgin Mojito, Berry Spritz",
-        "Premium Teas & Coffees",
+        "Sucuri proaspete: Pepene roșu, Ananas, Portocale",
+        "Mocktailuri de autor: Virgin Mojito, Berry Spritz",
+        "Ceaiuri și cafele premium",
       ],
       fullItems: [
         {
           name: "Café au Lait",
           description:
-            "A classic French coffee drink made with equal parts strong brewed coffee and steamed milk. Smooth, comforting, and typically enjoyed at breakfast.",
+            "O băutură clasică franțuzească din cafea tare și lapte spumat în părți egale. Fină, reconfortantă și savurată de obicei la micul dejun.",
           icon: <FaCoffee />,
           image: cafeAuLaitImg,
         },
         {
           name: "Espresso",
           description:
-            "A bold, concentrated shot of coffee served in a small cup. A staple in French cafés—strong, rich, and perfect for a quick caffeine boost.",
+            "O cafea intensă și concentrată, servită în ceașcă mică. Nelipsită din cafenelele franțuzești — tare, bogată și perfectă pentru un plus rapid de energie.",
           icon: <FaCoffee />,
           image: espressoImg,
         },
         {
           name: "Orangina",
           description:
-            "A sparkling citrus beverage made with orange juice and pulp. Lightly sweet with a unique taste and recognizable pear-shaped bottle.",
+            "O băutură carbogazoasă citrică, cu suc și pulpă de portocale. Ușor dulce, cu un gust unic și o sticlă inconfundabilă în formă de pară.",
           icon: <GiSodaCan />,
           image: oranginaImg,
         },
         {
           name: "Eau Pétillante",
           description:
-            "French sparkling mineral water—crisp, refreshing, and often served at restaurants as an alternative to still water.",
+            "Apă minerală carbogazoasă franțuzească — proaspătă, răcoritoare și servită adesea în restaurante ca alternativă la apa plată.",
           icon: <MdLocalDrink />,
           image: eauPetillanteImg,
         },
@@ -254,13 +254,13 @@ const MenuLists = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        Our Menus
+        Meniurile noastre
       </motion.h2>
       <div className="flex flex-col items-center justify-center mb-16">
         <motion.img
           variants={scaleUp}
           src={"/logo3.png"}
-          alt="Divine Kitchen decorative element"
+          alt="Element decorativ Divine Kitchen"
           className="mx-auto h-20 w-auto opacity-80"
         />
 
@@ -268,7 +268,7 @@ const MenuLists = () => {
           variants={fadeIn}
           className="mt-4 text-gray-600 italic tracking-wider font-semibold uppercase text-2xl"
         >
-          "Where every dish tells a story"
+          „Unde fiecare preparat spune o poveste”
         </motion.p>
       </div>
       <div className="space-y-6">
@@ -333,7 +333,7 @@ const MenuLists = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-[#ff2709] mb-4">
-                      Featured Items
+                      Preparate recomandate
                     </h4>
                     <ul className="space-y-3">
                       {menu.featuredItems.map((item, index) => (
@@ -347,7 +347,7 @@ const MenuLists = () => {
                       onClick={() => openFullMenu(menu)}
                       className="mt-6 bg-[#ff2709] hover:bg-[#ff3709] text-white py-2 px-6 rounded-full text-sm transition-colors shadow-md cursor-pointer"
                     >
-                      View Full Menu
+                      Vezi meniul complet
                     </button>
                   </div>
                 </div>
@@ -426,7 +426,7 @@ const MenuLists = () => {
                     onClick={closeModal}
                     className="bg-[#ff2709] hover:bg-[#ff3709] text-white py-3 px-8 rounded-full text-sm transition-colors shadow-md"
                   >
-                    Close Menu
+                    Închide meniul
                   </button>
                 </div>
               </div>

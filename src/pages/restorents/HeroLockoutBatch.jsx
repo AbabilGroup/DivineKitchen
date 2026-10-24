@@ -24,7 +24,7 @@ const HeroLockoutBatch = () => {
       >
         <img
           src={logoimg}
-          alt="Company Logo"
+          alt="Logo companie"
           className="h-24 lg:h-32 w-auto drop-shadow-lg"
         />
       </motion.div>
@@ -36,7 +36,7 @@ const HeroLockoutBatch = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Welcome to Lockout Beach
+          Bine ați venit la Lockout Beach
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ const HeroLockoutBatch = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          Discover serenity by the waves and golden sands.
+          Descoperiți liniștea lângă valuri și nisipul auriu.
         </motion.p>
 
         {/* Added button with related text */}
@@ -56,7 +56,7 @@ const HeroLockoutBatch = () => {
           transition={{ delay: 1.2, duration: 0.8 }}
         >
           <p className="text-white text-lg mb-4 max-w-md">
-            Experience our beachfront dining with breathtaking sunset views
+            Bucurați-vă de mesele noastre pe malul mării, cu priveliști uimitoare la apus
           </p>
           <motion.button
             onClick={() => {
@@ -67,7 +67,7 @@ const HeroLockoutBatch = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Reserve Your Table
+            Rezervați-vă masa
           </motion.button>
         </motion.div>
       </div>

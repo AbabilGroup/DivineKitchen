@@ -22,7 +22,7 @@ const Footer = () => {
           <a href="/">
             <img
               src={logo}
-              alt="Restaurant Logo"
+              alt="Logo restaurant"
               className="h-16 md:h-20 mb-4 md:mb-0 filter brightness-0 invert"
             />
           </a>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-red-500 mt-1 text-lg" />
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    Address
+                    Adresă
                   </h3>
                   <p className="text-gray-300">
                     Ul. Hrvoja Macanovića 44A, 10000, Zagreb, Croatia
@@ -108,7 +108,7 @@ const Footer = () => {
                 <FaPhone className="text-red-500 mt-1 text-lg" />
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    Phone
+                    Telefon
                   </h3>
                   <a
                     href="tel:+385997517865"
@@ -123,7 +123,7 @@ const Footer = () => {
                 <FaEnvelope className="text-red-500 mt-1 text-lg" />
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    Email Our Team
+                    Scrieți-ne un e-mail
                   </h3>
                   <a
                     href="mailto:manager@divinekitchen.eu"
@@ -138,12 +138,12 @@ const Footer = () => {
                 <FaClock className="text-red-500 mt-1 text-lg" />
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    Working Hours
+                    Program
                   </h3>
                   <p className="text-gray-300">
-                    Monday to Sunday:
+                    Luni – Duminică:
                     <br />
-                    12.00 AM - 11.00 PM
+                    12:00 - 23:00
                   </p>
                 </div>
               </div>
@@ -153,7 +153,7 @@ const Footer = () => {
           {/* Right Column - Contact Form */}
           <div id="contact-us" className="col-span-5">
             <h3 className="text-lg font-semibold text-white mb-4">
-              Send us a message
+              Trimiteți-ne un mesaj
             </h3>
             <form className="space-y-4">
               <div>
@@ -161,7 +161,7 @@ const Footer = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-300 mb-1"
                 >
-                  Full Name
+                  Nume complet
                 </label>
                 <input
                   type="text"
@@ -177,7 +177,7 @@ const Footer = () => {
                     htmlFor="phone"
                     className="block text-sm font-medium text-gray-300 mb-1"
                   >
-                    Phone Number
+                    Număr de telefon
                   </label>
                   <input
                     type="tel"
@@ -192,7 +192,7 @@ const Footer = () => {
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-300 mb-1"
                   >
-                    Email Address
+                    Adresă de e-mail
                   </label>
                   <input
                     type="email"
@@ -208,17 +208,17 @@ const Footer = () => {
                   htmlFor="reason"
                   className="block text-sm font-medium text-gray-300 mb-1"
                 >
-                  Reason
+                  Motiv
                 </label>
                 <select
                   id="reason"
                   className="w-full px-4 py-2 rounded border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-red-500/50"
                 >
-                  <option value="">Select a reason</option>
-                  <option value="reservation">Reservation</option>
-                  <option value="event">Event Inquiry</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
+                  <option value="">Selectați un motiv</option>
+                  <option value="reservation">Rezervare</option>
+                  <option value="event">Solicitare eveniment</option>
+                  <option value="feedback">Părere</option>
+                  <option value="other">Altele</option>
                 </select>
               </div>
 
@@ -227,7 +227,7 @@ const Footer = () => {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-300 mb-1"
                 >
-                  Write your Message
+                  Scrieți mesajul dvs.
                 </label>
                 <textarea
                   id="message"
@@ -240,7 +240,7 @@ const Footer = () => {
                 type="submit"
                 className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-md transition-colors font-medium shadow-lg"
               >
-                Submit
+                Trimite
               </button>
             </form>
           </div>
@@ -248,7 +248,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
-          © {new Date().getFullYear()} Divine Kitchen. All rights reserved.
+          © {new Date().getFullYear()} Divine Kitchen. Toate drepturile rezervate.
         </div>
       </div>
     </footer>

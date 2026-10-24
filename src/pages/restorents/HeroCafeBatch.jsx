@@ -23,7 +23,7 @@ const HeroRestorant = () => {
       >
         <img
           src={logoimg}
-          alt="Company Logo"
+          alt="Logo companie"
           className="h-24 lg:h-32 w-auto drop-shadow-lg"
         />
       </motion.div>
@@ -35,7 +35,7 @@ const HeroRestorant = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Welcome to Cafe Beach
+          Bine ați venit la Cafe Beach
         </motion.h1>
 
         <motion.p
@@ -44,7 +44,7 @@ const HeroRestorant = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          Discover serenity by the waves and golden sands.
+          Descoperiți liniștea lângă valuri și nisipul auriu.
         </motion.p>
       </div>
     </section>

@@ -89,14 +89,14 @@ const GalleryHome = () => {
           variants={fadeIn}
           className="text-primary text-3xl md:text-4xl lg:text-6xl font-lobster font-semibold mb-2"
         >
-          Our Gallery
+          Galeria noastră
         </motion.h1>
 
         <motion.p
           variants={fadeIn}
           className="text-gray-700 max-w-md mx-auto text-lg"
         >
-          A collection of our special moments
+          O colecție a momentelor noastre speciale
         </motion.p>
       </motion.div>
 
@@ -113,7 +113,7 @@ const GalleryHome = () => {
           >
             <motion.img
               src={image.src}
-              alt="Gallery image"
+              alt="Imagine din galerie"
               className="w-full h-96 object-cover"
               whileHover={imageHover}
               variants={zoomEffect}

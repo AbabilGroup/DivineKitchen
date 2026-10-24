@@ -24,7 +24,7 @@ const Heropage = () => {
       >
         <img
           src={logoimg}
-          alt="Company Logo"
+          alt="Logo companie"
           className="h-24 lg:h-32 w-auto drop-shadow-lg"
         />
       </motion.div>
@@ -36,7 +36,7 @@ const Heropage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Welcome to Our Restaurant
+          Bine ați venit la restaurantul nostru
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ const Heropage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          Your presence makes every moment more delightful.
+          Prezența dumneavoastră face fiecare moment mai încântător.
         </motion.p>
       </div>
     </section>

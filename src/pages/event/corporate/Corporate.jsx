@@ -68,7 +68,7 @@ const Corporate = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for your inquiry! We'll contact you soon.");
+    alert("Vă mulțumim pentru solicitare! Vă vom contacta în curând.");
   };
 
   // Animation variants
@@ -90,7 +90,7 @@ const Corporate = () => {
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <motion.img
           src={heroCorporate}
-          alt="Divine Kitchen Corporate Events"
+          alt="Evenimente corporative Divine Kitchen"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -105,7 +105,7 @@ const Corporate = () => {
           >
             <img
               src={"/logo2.png"}
-              alt="Company Logo"
+              alt="Logo companie"
               className="h-24 lg:h-32 w-auto drop-shadow-lg"
             />
           </motion.div>
@@ -116,7 +116,7 @@ const Corporate = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-3xl"
           >
-            Exceptional Corporate Catering & Event Services
+            Servicii excepționale de catering și evenimente corporative
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -124,8 +124,8 @@ const Corporate = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-white mb-8 max-w-2xl"
           >
-            Impress your clients and colleagues with our premium catering
-            solutions
+            Impresionați-vă clienții și colegii cu soluțiile noastre de catering
+            premium
           </motion.p>
 
           {/* Added CTA Button */}
@@ -145,11 +145,10 @@ const Corporate = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaBriefcase className="mr-2" />
-              Request Corporate Proposal
+              Solicitați o ofertă corporativă
             </motion.button>
             <p className="text-white/80 text-sm mt-3 max-w-md">
-              Complete event solutions for meetings, conferences, and corporate
-              galas
+              Soluții complete pentru întâlniri, conferințe și gale corporative
             </p>
           </motion.div>
         </div>
@@ -165,13 +164,14 @@ const Corporate = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl font-bold text-gray-800 mb-6 font-serif">
-            Professional Catering for Business Excellence
+            Catering profesional pentru excelență în afaceri
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            Divine Kitchen specializes in sophisticated corporate catering for
-            meetings, conferences, and executive events. Our culinary team
-            creates memorable dining experiences that reflect your company's
-            standards and impress your most important guests.
+            Divine Kitchen este specializat în catering corporativ rafinat
+            pentru întâlniri, conferințe și evenimente executive. Echipa noastră
+            culinară creează experiențe memorabile care reflectă standardele
+            companiei dumneavoastră și impresionează cei mai importanți
+            invitați.
           </p>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
         </motion.div>
@@ -189,12 +189,14 @@ const Corporate = () => {
               {currentIndices.map((index, i) => (
                 <motion.div
                   key={i}
-                  className="w-full md:w-1/3 flex-shrink-0 overflow-hidden rounded-lg shadow-lg"
+                  className={`flex-1 min-w-0 overflow-hidden rounded-lg shadow-lg ${
+                    i > 0 ? "hidden md:block" : ""
+                  }`}
                   whileHover={{ scale: 1.03 }}
                 >
                   <img
                     src={corporateImages[index]}
-                    alt={`Corporate event ${index + 1}`}
+                    alt={`Eveniment corporativ ${index + 1}`}
                     className="w-full h-64 md:h-80 object-cover"
                   />
                 </motion.div>
@@ -227,7 +229,7 @@ const Corporate = () => {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center font-serif text-amber-600 mb-12"
           >
-            Corporate Event Solutions
+            Soluții pentru evenimente corporative
           </motion.h2>
 
           <motion.div
@@ -244,11 +246,12 @@ const Corporate = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Executive Dining
+                    Dining executiv
                   </h3>
                   <p className="text-gray-600">
-                    Impress clients with our premium business lunch and dinner
-                    menus featuring seasonal, locally-sourced ingredients.
+                    Impresionați-vă clienții cu meniurile noastre premium pentru
+                    prânzuri și cine de afaceri, cu ingrediente locale, de
+                    sezon.
                   </p>
                 </div>
               </div>
@@ -259,11 +262,12 @@ const Corporate = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Conference Catering
+                    Catering pentru conferințe
                   </h3>
                   <p className="text-gray-600">
-                    Keep attendees energized with our tailored break station
-                    options and buffet solutions for multi-day events.
+                    Mențineți participanții plini de energie cu pauzele de cafea
+                    personalizate și soluțiile de bufet pentru evenimente de mai
+                    multe zile.
                   </p>
                 </div>
               </div>
@@ -274,11 +278,11 @@ const Corporate = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Networking Receptions
+                    Recepții de networking
                   </h3>
                   <p className="text-gray-600">
-                    Elegant passed hors d'oeuvres and cocktail menus designed to
-                    facilitate business connections.
+                    Aperitive elegante servite de ospătari și meniuri de
+                    cocktail create pentru a facilita conexiunile de afaceri.
                   </p>
                 </div>
               </div>
@@ -289,11 +293,12 @@ const Corporate = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Full Event Coordination
+                    Coordonare completă a evenimentului
                   </h3>
                   <p className="text-gray-600">
-                    From venue selection to clean-up, our team handles all
-                    logistics for seamless corporate events.
+                    De la alegerea locației până la curățenia de final, echipa
+                    noastră se ocupă de toată logistica pentru evenimente
+                    corporative impecabile.
                   </p>
                 </div>
               </div>
@@ -302,20 +307,21 @@ const Corporate = () => {
             <div className="relative rounded-xl overflow-hidden shadow-xl h-full min-h-[500px]">
               <img
                 src={venueImage}
-                alt="Corporate event venue"
+                alt="Locație pentru evenimente corporative"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Our Premium Event Space
+                  Spațiul nostru premium pentru evenimente
                 </h3>
                 <div className="flex items-center text-white mb-4">
                   <FaMapMarkerAlt className="mr-2 text-blue-300" />
                   <span>Ul. Hrvoja Macanovića 44A, 10000, Zagreb, Croatia</span>
                 </div>
                 <p className="text-white/90">
-                  Modern conference facilities with capacity for up to 500
-                  guests. Perfect for product launches and corporate galas.
+                  Facilități moderne pentru conferințe, cu o capacitate de până
+                  la 500 de invitați. Perfecte pentru lansări de produse și gale
+                  corporative.
                 </p>
               </div>
             </div>
@@ -333,7 +339,7 @@ const Corporate = () => {
             variants={fadeIn}
             className="text-3xl font-bold text-center font-serif text-amber-600 mb-12"
           >
-            Request Corporate Services
+            Solicitați servicii corporative
           </motion.h2>
 
           <motion.div
@@ -352,7 +358,7 @@ const Corporate = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Numele dumneavoastră"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -367,7 +373,7 @@ const Corporate = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="E-mail"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -382,7 +388,7 @@ const Corporate = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone"
+                    placeholder="Telefon"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -415,7 +421,7 @@ const Corporate = () => {
                     onChange={handleInputChange}
                     required
                   >
-                    <option value="">Number of Attendees</option>
+                    <option value="">Număr de participanți</option>
                     <option value="10-50">10-50</option>
                     <option value="50-100">50-100</option>
                     <option value="100-200">100-200</option>
@@ -426,7 +432,7 @@ const Corporate = () => {
                 <div className="relative md:col-span-2">
                   <textarea
                     name="message"
-                    placeholder="Tell us about your event needs..."
+                    placeholder="Spuneți-ne despre nevoile evenimentului dumneavoastră..."
                     rows="4"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     value={formData.message}
@@ -439,7 +445,7 @@ const Corporate = () => {
                 type="submit"
                 className="w-full px-6 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
               >
-                Request Corporate Services
+                Solicitați servicii corporative
               </button>
             </form>
           </motion.div>

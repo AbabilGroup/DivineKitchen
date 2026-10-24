@@ -16,27 +16,30 @@ const VanueLockoutBeatch = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-amber-500 font-serif mb-4">
-            Our Venue
+            Locația noastră
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Catering to groups from intimate gatherings to grand celebrations,
-            LockOut Beach offers versatile venue options for every occasion.
+            Pentru grupuri de toate mărimile, de la întâlniri intime la
+            sărbători grandioase, LockOut Beach oferă spații versatile pentru
+            orice ocazie.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <p className="text-lg text-gray-700">
-              LockOut Beach is the perfect multi-functional space for corporate
-              events, weddings, private celebrations, launches, engagement
-              parties, milestone celebrations, and tailored group functions.
+              LockOut Beach este spațiul multifuncțional perfect pentru
+              evenimente corporative, nunți, petreceri private, lansări,
+              logodne, aniversări importante și evenimente de grup
+              personalizate.
             </p>
             <p className="text-lg text-gray-700">
-              From intimate gatherings of 10 to larger events of up to 1000
-              guests, our beachfront venue transforms to suit your vision.
-              Explore our venue choices below and contact us to plan your next
-              special event.
+              De la întâlniri intime de 10 persoane până la evenimente mari de
+              până la 1000 de invitați, locația noastră de pe malul mării se
+              adaptează viziunii dumneavoastră. Descoperiți mai jos opțiunile
+              noastre și contactați-ne pentru a vă planifica următorul eveniment
+              special.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-8">
@@ -45,8 +48,8 @@ const VanueLockoutBeatch = () => {
                   <FaUsers className="text-amber-600 text-xl" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary">Capacity</h4>
-                  <p className="text-gray-600">10-1000 guests</p>
+                  <h4 className="font-bold text-primary">Capacitate</h4>
+                  <p className="text-gray-600">10-1000 de invitați</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -54,8 +57,8 @@ const VanueLockoutBeatch = () => {
                   <FaGlassCheers className="text-amber-600 text-xl" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary">Events</h4>
-                  <p className="text-gray-600">Weddings, Corporate</p>
+                  <h4 className="font-bold text-primary">Evenimente</h4>
+                  <p className="text-gray-600">Nunți, corporative</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -63,8 +66,8 @@ const VanueLockoutBeatch = () => {
                   <FaCalendarAlt className="text-amber-600 text-xl" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-primary">Availability</h4>
-                  <p className="text-gray-600">Year-round</p>
+                  <h4 className="font-bold text-primary">Disponibilitate</h4>
+                  <p className="text-gray-600">Tot anul</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -73,7 +76,7 @@ const VanueLockoutBeatch = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary">Catering</h4>
-                  <p className="text-gray-600">Custom menus</p>
+                  <p className="text-gray-600">Meniuri personalizate</p>
                 </div>
               </div>
             </div>
@@ -83,28 +86,28 @@ const VanueLockoutBeatch = () => {
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
               <img
                 src={venue1}
-                alt="Beachfront venue"
+                alt="Locație pe malul mării"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
               <img
                 src={venue2}
-                alt="Event setup"
+                alt="Amenajare eveniment"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
               <img
                 src={venue3}
-                alt="Wedding venue"
+                alt="Locație pentru nuntă"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
               <img
                 src={venue4}
-                alt="Corporate event"
+                alt="Eveniment corporativ"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -119,7 +122,7 @@ const VanueLockoutBeatch = () => {
             }}
             className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-4 px-12 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg"
           >
-            Enquire About Venue Hire
+            Solicitați informații despre închirierea locației
           </button>
         </div>
       </div>

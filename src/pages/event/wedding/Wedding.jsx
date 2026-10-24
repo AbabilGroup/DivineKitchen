@@ -70,7 +70,7 @@ const Wedding = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for your inquiry! We'll contact you soon.");
+    alert("Vă mulțumim pentru solicitare! Vă vom contacta în curând.");
     // Form submission logic here
   };
 
@@ -93,7 +93,7 @@ const Wedding = () => {
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <motion.img
           src={heroImage}
-          alt="Divine Kitchen Wedding"
+          alt="Nuntă la Divine Kitchen"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -108,7 +108,7 @@ const Wedding = () => {
           >
             <img
               src={"/logo2.png"}
-              alt="Company Logo"
+              alt="Logo companie"
               className="h-24 lg:h-32 w-auto drop-shadow-lg"
             />
           </motion.div>
@@ -118,7 +118,7 @@ const Wedding = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold text-white mb-6"
           >
-            Weddings at Divine Kitchen
+            Nunți la Divine Kitchen
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -126,7 +126,7 @@ const Wedding = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-white mb-8 max-w-2xl"
           >
-            Celebrate Love in Tasteful Style
+            Celebrați iubirea cu gust și stil
           </motion.p>
 
           {/* Added CTA Button */}
@@ -146,11 +146,11 @@ const Wedding = () => {
               whileTap={{ scale: 0.95 }}
             >
               <FaCalendarAlt className="mr-2" />
-              Book Your Wedding Date
+              Rezervați data nunții
             </motion.button>
             <p className="text-white/80 text-sm mt-3 max-w-md">
-              Limited availability for 2025-2026 weddings - Reserve your date
-              today
+              Disponibilitate limitată pentru nunțile din 2025-2026 - Rezervați-
+              vă data astăzi
             </p>
           </motion.div>
         </div>
@@ -166,10 +166,10 @@ const Wedding = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <motion.p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-            At Divine Kitchen, we believe that love deserves to be celebrated
-            with elegance and flavor. From enchanting countryside receptions to
-            stylish seaside affairs, we create wedding experiences that delight
-            the senses and linger in memory.
+            La Divine Kitchen, credem că iubirea merită celebrată cu eleganță și
+            savoare. De la recepții fermecătoare la țară până la petreceri
+            elegante la malul mării, creăm experiențe de nuntă care încântă
+            simțurile și rămân în amintire.
           </motion.p>
           <div className="w-24 h-1 bg-amber-600 mx-auto mb-12"></div>
         </motion.div>
@@ -187,12 +187,14 @@ const Wedding = () => {
               {currentIndices.map((index, i) => (
                 <motion.div
                   key={i}
-                  className="w-full md:w-1/3 flex-shrink-0 overflow-hidden rounded-xl shadow-lg"
+                  className={`flex-1 min-w-0 overflow-hidden rounded-xl shadow-lg ${
+                    i > 0 ? "hidden md:block" : ""
+                  }`}
                   whileHover={{ scale: 1.03 }}
                 >
                   <img
                     src={weddingImages[index]}
-                    alt={`Wedding ${index + 1}`}
+                    alt={`Nuntă ${index + 1}`}
                     className="w-full h-64 md:h-80 object-cover"
                   />
                 </motion.div>
@@ -225,7 +227,7 @@ const Wedding = () => {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-12"
           >
-            Tailored Menus, Seamless Service
+            Meniuri personalizate, servicii impecabile
           </motion.h2>
 
           <motion.div
@@ -242,11 +244,11 @@ const Wedding = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Gourmet Excellence
+                    Excelență gourmet
                   </h3>
                   <p className="text-gray-600">
-                    Our chefs craft personalized menus using the freshest
-                    seasonal ingredients.
+                    Bucătarii noștri creează meniuri personalizate folosind cele
+                    mai proaspete ingrediente de sezon.
                   </p>
                 </div>
               </div>
@@ -257,11 +259,11 @@ const Wedding = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Full-Service Planning
+                    Planificare completă
                   </h3>
                   <p className="text-gray-600">
-                    From champagne toasts to dessert spreads, we handle every
-                    detail.
+                    De la toasturile cu șampanie până la mesele cu deserturi, ne
+                    ocupăm de fiecare detaliu.
                   </p>
                 </div>
               </div>
@@ -274,7 +276,7 @@ const Wedding = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Numele dumneavoastră"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -290,7 +292,7 @@ const Wedding = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="E-mail"
                       className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                       value={formData.email}
                       onChange={handleInputChange}
@@ -304,7 +306,7 @@ const Wedding = () => {
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="Phone"
+                      placeholder="Telefon"
                       className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                       value={formData.phone}
                       onChange={handleInputChange}
@@ -338,7 +340,7 @@ const Wedding = () => {
                       onChange={handleInputChange}
                       required
                     >
-                      <option value="">Number of Guests</option>
+                      <option value="">Număr de invitați</option>
                       <option value="50-100">50-100</option>
                       <option value="100-200">100-200</option>
                       <option value="200+">200+</option>
@@ -348,7 +350,7 @@ const Wedding = () => {
 
                 <textarea
                   name="message"
-                  placeholder="Tell us about your dream wedding..."
+                  placeholder="Spuneți-ne despre nunta visurilor dumneavoastră..."
                   rows="3"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   value={formData.message}
@@ -359,7 +361,7 @@ const Wedding = () => {
                   type="submit"
                   className="w-full px-6 py-4 bg-gradient-to-r from-amber-600 to-amber-800 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
                 >
-                  Request Wedding Consultation
+                  Solicitați o consultanță pentru nuntă
                 </button>
               </form>
             </div>
@@ -367,20 +369,20 @@ const Wedding = () => {
             <div className="relative rounded-xl overflow-hidden shadow-xl h-full min-h-[500px]">
               <img
                 src={venueImage}
-                alt="Wedding venue"
+                alt="Locație pentru nuntă"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Our Seaside Venue
+                  Locația noastră de la malul mării
                 </h3>
                 <div className="flex items-center text-white mb-4">
                   <FaMapMarkerAlt className="mr-2 text-amber-300" />
-                  <span>123 Coastal Highway, Beachfront Paradise</span>
+                  <span>Șoseaua Coastei 123, Paradisul de pe plajă</span>
                 </div>
                 <p className="text-white/90">
-                  Panoramic ocean views with capacity for up to 300 guests.
-                  Perfect for sunset ceremonies.
+                  Priveliști panoramice asupra oceanului, cu o capacitate de
+                  până la 300 de invitați. Perfectă pentru ceremonii la apus.
                 </p>
               </div>
             </div>
@@ -398,7 +400,7 @@ const Wedding = () => {
             variants={fadeIn}
             className="text-3xl font-bold text-amber-800 mb-12"
           >
-            Love Stories
+            Povești de dragoste
           </motion.h2>
 
           <motion.div
@@ -410,17 +412,17 @@ const Wedding = () => {
           >
             <div className="text-amber-600 text-5xl mb-4">"</div>
             <p className="text-lg text-gray-700 italic mb-6">
-              Divine Kitchen made our wedding day absolutely magical. The food
-              was incredible, the service impeccable, and the seaside setting
-              was beyond our dreams.
+              Divine Kitchen a făcut ziua nunții noastre absolut magică.
+              Mâncarea a fost incredibilă, serviciul impecabil, iar cadrul de la
+              malul mării a depășit tot ce visam.
             </p>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center">
                 <FaHeart className="text-amber-600" />
               </div>
               <div>
-                <h4 className="font-semibold">Sarah & Michael</h4>
-                <p className="text-sm text-gray-500">June 2023</p>
+                <h4 className="font-semibold">Sarah și Michael</h4>
+                <p className="text-sm text-gray-500">Iunie 2023</p>
               </div>
             </div>
           </motion.div>

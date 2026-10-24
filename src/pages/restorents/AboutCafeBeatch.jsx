@@ -9,6 +9,7 @@ import {
   FaWineBottle,
   FaCoffee,
   FaBirthdayCake,
+  FaLeaf,
 } from "react-icons/fa";
 import cafeImage from "../../assets/images/restorant/cafe.jpg?url";
 import breakfast from "../../assets/images/restorant/morning.webp?url";
@@ -55,16 +56,16 @@ const scaleUp = {
 const AboutCafeBeatch = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-amber-100">
-      <div className="flex flex-col md:flex-row md:h-screen">
+      <div className="flex flex-col md:flex-row md:min-h-screen">
         <motion.div
-          className="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden order-1 md:order-2"
+          className="w-full md:w-1/2 h-80 sm:h-96 md:h-auto relative overflow-hidden order-1 md:order-2"
           initial="hidden"
           animate="show"
           variants={fadeIn}
         >
           <img
             src={cafeImage}
-            alt="Divine Kitchen restaurant"
+            alt="Restaurantul Divine Kitchen"
             className="w-full h-full object-cover absolute inset-0"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 md:bg-gradient-to-l md:from-black md:to-transparent"></div>
@@ -84,13 +85,13 @@ const AboutCafeBeatch = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Book Now
+              Rezervă acum
             </motion.button>
           </motion.div>
         </motion.div>
 
         <motion.div
-          className="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-8 md:p-12 bg-white order-2 md:order-1"
+          className="w-full md:w-1/2 flex items-center justify-center p-6 sm:p-8 md:p-12 bg-white order-2 md:order-1"
           initial="hidden"
           animate="show"
           variants={slideInFromLeft}
@@ -106,7 +107,7 @@ const AboutCafeBeatch = () => {
               className="text-3xl md:text-4xl text-primary font-lobster leading-tight tracking-widest font-semibold italic mb-8"
               variants={item}
             >
-              A Beloved Seaside Escape
+              Un refugiu îndrăgit la malul mării
             </motion.p>
 
             <motion.div
@@ -116,19 +117,19 @@ const AboutCafeBeatch = () => {
               animate="show"
             >
               <motion.p variants={item}>
-                Divine Kitchen celebrates a laid-back, free-spirited dining
-                experience, perfectly nestled along the coastline. Here,
-                breathtaking sea views meet a calm, inviting ambiance.
+                Divine Kitchen celebrează o experiență culinară relaxată și
+                liberă, așezată perfect de-a lungul coastei. Aici, priveliștile
+                uimitoare asupra mării întâlnesc o atmosferă calmă și
+                primitoare.
               </motion.p>
 
               <motion.p variants={item}>
-                Blending vibrant charm with a sense of serene retreat, Divine
-                Kitchen offers more than just a meal; it's in the heart of the
-                beach.
+                Îmbinând un farmec vibrant cu senzația unui refugiu liniștit,
+                Divine Kitchen oferă mai mult decât o simplă masă;{" "}
                 <span className="italic text-amber-600 font-medium">
-                  'A world away'
+                  „o lume aparte”
                 </span>{" "}
-                in the heart of the beach.
+                în inima plajei.
               </motion.p>
 
               <motion.div
@@ -155,7 +156,7 @@ const AboutCafeBeatch = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Book Now
+                Rezervă acum
               </motion.button>
             </motion.div>
 
@@ -167,19 +168,19 @@ const AboutCafeBeatch = () => {
             >
               <motion.div className="flex items-center" variants={item}>
                 <FaRegClock className="text-amber-600 mr-2" />
-                <span>12PM - 11PM</span>
+                <span>12:00 - 23:00</span>
               </motion.div>
               <motion.div className="flex items-center" variants={item}>
                 <FaUtensils className="text-amber-600 mr-2" />
-                <span>Ocean View</span>
+                <span>Vedere la ocean</span>
               </motion.div>
               <motion.div className="flex items-center" variants={item}>
                 <FaWineGlassAlt className="text-amber-600 mr-2" />
-                <span>Wine Pairing</span>
+                <span>Asocieri cu vin</span>
               </motion.div>
               <motion.div className="flex items-center" variants={item}>
                 <FaBirthdayCake className="text-amber-600 mr-2" />
-                <span>Private Events</span>
+                <span>Evenimente private</span>
               </motion.div>
             </motion.div>
           </div>
@@ -196,26 +197,27 @@ const AboutCafeBeatch = () => {
         >
           <motion.div variants={item}>
             <h2 className="text-3xl font-bold text-amber-600 mb-6 font-serif">
-              Our Philosophy
+              Filosofia noastră
             </h2>
             <div className="space-y-6 text-gray-700">
               <p>
-                At Divine Kitchen, we blend a love for culinary artistry with a
-                commitment to fresh, seasonal ingredients. Every dish is crafted
-                to reflect a harmony of land and sea, inspired by global flavors
-                and rooted in timeless technique.
+                La Divine Kitchen, îmbinăm pasiunea pentru arta culinară cu
+                angajamentul față de ingrediente proaspete, de sezon. Fiecare
+                preparat este creat pentru a reflecta armonia dintre uscat și
+                mare, inspirat de arome din întreaga lume și înrădăcinat în
+                tehnici atemporale.
               </p>
               <p>
-                Celebrated for our warm hospitality and unforgettable dining,
-                Divine Kitchen has become a favorite for those who appreciate
-                exceptional food in a welcoming atmosphere.
+                Apreciat pentru ospitalitatea caldă și mesele de neuitat, Divine
+                Kitchen a devenit locul preferat al celor care prețuiesc
+                mâncarea excepțională într-o atmosferă primitoare.
               </p>
             </div>
           </motion.div>
 
           <motion.div variants={item}>
             <h2 className="text-3xl font-bold text-amber-600 mb-6 font-serif">
-              Dining Experiences
+              Experiențe culinare
             </h2>
             <div className="space-y-6">
               <motion.div
@@ -223,11 +225,11 @@ const AboutCafeBeatch = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <h3 className="text-xl font-medium text-amber-600">
-                  Chef's Table
+                  Masa bucătarului-șef
                 </h3>
                 <p className="text-gray-700">
-                  A personalized culinary journey with exclusive dishes curated
-                  by our head chef.
+                  O călătorie culinară personalizată, cu preparate exclusive
+                  alese de bucătarul nostru-șef.
                 </p>
               </motion.div>
               <motion.div
@@ -235,11 +237,11 @@ const AboutCafeBeatch = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <h3 className="text-xl font-medium text-amber-600">
-                  Sunset Dining
+                  Cină la apus
                 </h3>
                 <p className="text-gray-700">
-                  Savor golden hour with reserved seating and breathtaking views
-                  — the perfect setting for a relaxed evening.
+                  Savurați ora de aur cu locuri rezervate și priveliști
+                  uimitoare — cadrul perfect pentru o seară relaxată.
                 </p>
               </motion.div>
               <motion.div
@@ -247,11 +249,11 @@ const AboutCafeBeatch = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <h3 className="text-xl font-medium text-amber-600">
-                  Private Events
+                  Evenimente private
                 </h3>
                 <p className="text-gray-700">
-                  Tailored menus, thoughtful service, and a stylish setting for
-                  your most memorable occasions.
+                  Meniuri personalizate, servicii atente și un cadru elegant
+                  pentru cele mai memorabile ocazii ale dumneavoastră.
                 </p>
               </motion.div>
             </div>
@@ -259,7 +261,7 @@ const AboutCafeBeatch = () => {
         </motion.div>
 
         <motion.div
-          className="mt-20 max-w-6xl mx-auto px-6"
+          className="mt-20 overflow-x-clip"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
@@ -269,7 +271,7 @@ const AboutCafeBeatch = () => {
             className="text-4xl font-bold text-amber-600 text-center mb-16 font-serif"
             variants={item}
           >
-            Our Cafe Services
+            Serviciile cafenelei noastre
           </motion.h2>
 
           <div className="relative">
@@ -284,34 +286,34 @@ const AboutCafeBeatch = () => {
                 variants={item}
               >
                 <motion.div
-                  className="md:w-1/2 p-6 md:pr-12 order-1 md:order-2"
+                  className="w-full md:w-1/2 py-6 md:pl-12 order-1 md:order-2"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={slideInFromLeft}
                 >
-                  <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
                     <div className="flex items-center mb-4">
                       <div className="bg-amber-100 p-3 rounded-full mr-4">
                         <FaCoffee className="text-amber-600 text-xl" />
                       </div>
                       <h3 className="text-2xl font-bold text-amber-800">
-                        Morning Bliss
+                        Dimineți fericite
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">
-                      Start your day right with our sunrise breakfast service
-                      featuring artisanal pastries, organic eggs, and specialty
-                      coffee blends.
+                      Începeți ziua cum se cuvine cu micul nostru dejun la
+                      răsărit: produse de patiserie artizanale, ouă bio și
+                      amestecuri de cafea de specialitate.
                     </p>
                     <div className="flex items-center text-amber-600">
                       <FaRegClock className="mr-2" />
-                      <span>7:00 AM - 11:00 AM</span>
+                      <span>07:00 - 11:00</span>
                     </div>
                   </div>
                 </motion.div>
                 <motion.div
-                  className="md:w-1/2 order-2 md:order-1"
+                  className="w-full md:w-1/2 md:pr-12 order-2 md:order-1"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
@@ -320,7 +322,7 @@ const AboutCafeBeatch = () => {
                   <div className="h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
                     <motion.img
                       src={breakfast}
-                      alt="Breakfast service"
+                      alt="Mic dejun"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.5 }}
@@ -334,34 +336,34 @@ const AboutCafeBeatch = () => {
                 variants={item}
               >
                 <motion.div
-                  className="md:w-1/2 p-6 md:pl-12"
+                  className="w-full md:w-1/2 py-6 md:pr-12"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={slideInFromRight}
                 >
-                  <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
                     <div className="flex items-center mb-4">
                       <div className="bg-amber-100 p-3 rounded-full mr-4">
                         <FaUtensils className="text-amber-600 text-xl" />
                       </div>
                       <h3 className="text-2xl font-bold text-amber-800">
-                        Midday Retreat
+                        Răgaz la prânz
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">
-                      Light lunches and refreshing drinks perfect for a
-                      beachside break. Enjoy our signature salads, sandwiches,
-                      and cold-pressed juices.
+                      Prânzuri ușoare și băuturi răcoritoare, perfecte pentru o
+                      pauză pe plajă. Savurați salatele, sandvișurile și
+                      sucurile presate la rece ale casei.
                     </p>
                     <div className="flex items-center text-amber-600">
                       <FaRegClock className="mr-2" />
-                      <span>11:00 AM - 3:00 PM</span>
+                      <span>11:00 - 15:00</span>
                     </div>
                   </div>
                 </motion.div>
                 <motion.div
-                  className="md:w-1/2"
+                  className="w-full md:w-1/2 md:pl-12"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
@@ -370,7 +372,7 @@ const AboutCafeBeatch = () => {
                   <div className="h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
                     <motion.img
                       src={lunch}
-                      alt="Lunch service"
+                      alt="Prânz"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.5 }}
@@ -384,34 +386,34 @@ const AboutCafeBeatch = () => {
                 variants={item}
               >
                 <motion.div
-                  className="md:w-1/2 p-6 md:pr-12 order-1 md:order-2"
+                  className="w-full md:w-1/2 py-6 md:pl-12 order-1 md:order-2"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={slideInFromLeft}
                 >
-                  <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
                     <div className="flex items-center mb-4">
                       <div className="bg-amber-100 p-3 rounded-full mr-4">
                         <FaWineGlassAlt className="text-amber-600 text-xl" />
                       </div>
                       <h3 className="text-2xl font-bold text-amber-800">
-                        Golden Hour
+                        Ora de aur
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">
-                      Afternoon delights with our premium tea selection, wine
-                      flights, and shareable small plates as the sun sets over
-                      the ocean.
+                      Delicii de după-amiază cu selecția noastră de ceaiuri
+                      premium, degustări de vin și platouri mici de împărțit, în
+                      timp ce soarele apune peste ocean.
                     </p>
                     <div className="flex items-center text-amber-600">
                       <FaRegClock className="mr-2" />
-                      <span>3:00 PM - 6:00 PM</span>
+                      <span>15:00 - 18:00</span>
                     </div>
                   </div>
                 </motion.div>
                 <motion.div
-                  className="md:w-1/2 order-2 md:order-1"
+                  className="w-full md:w-1/2 md:pr-12 order-2 md:order-1"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
@@ -420,7 +422,7 @@ const AboutCafeBeatch = () => {
                   <div className="h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
                     <motion.img
                       src={evening}
-                      alt="Evening service"
+                      alt="Servire de seară"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.5 }}
@@ -434,33 +436,34 @@ const AboutCafeBeatch = () => {
                 variants={item}
               >
                 <motion.div
-                  className="md:w-1/2 p-6 md:pl-12"
+                  className="w-full md:w-1/2 py-6 md:pr-12"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={slideInFromRight}
                 >
-                  <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
                     <div className="flex items-center mb-4">
                       <div className="bg-amber-100 p-3 rounded-full mr-4">
                         <FaWineBottle className="text-amber-600 text-xl" />
                       </div>
                       <h3 className="text-2xl font-bold text-amber-800">
-                        Moonlight Dining
+                        Cină sub clar de lună
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">
-                      Intimate evening dining with candlelit tables, chef's
-                      specials, and an extensive wine list under the stars.
+                      Cine intime, cu mese luminate de lumânări, specialitățile
+                      bucătarului-șef și o listă bogată de vinuri, sub cerul
+                      înstelat.
                     </p>
                     <div className="flex items-center text-amber-600">
                       <FaRegClock className="mr-2" />
-                      <span>6:00 PM - 11:00 PM</span>
+                      <span>18:00 - 23:00</span>
                     </div>
                   </div>
                 </motion.div>
                 <motion.div
-                  className="md:w-1/2"
+                  className="w-full md:w-1/2 md:pl-12"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
@@ -469,7 +472,7 @@ const AboutCafeBeatch = () => {
                   <div className="h-64 md:h-80 rounded-xl overflow-hidden shadow-lg">
                     <motion.img
                       src={Wine}
-                      alt="Evening dining"
+                      alt="Cină"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.5 }}
@@ -479,49 +482,50 @@ const AboutCafeBeatch = () => {
               </motion.div>
 
               <motion.div
-                className="flex flex-col md:flex-row items-center bg-amber-50 rounded-2xl p-1"
+                className="flex flex-col md:flex-row items-center md:bg-amber-50 rounded-2xl md:p-1"
                 variants={item}
               >
                 <motion.div
-                  className="md:w-1/2 p-6 order-1 md:order-2"
+                  className="w-full md:w-1/2 py-6 md:p-6 order-1 md:order-2"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
                   variants={slideInFromLeft}
                 >
-                  <div className="bg-white p-8 rounded-xl shadow-lg border-2 border-amber-100">
+                  <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border-2 border-amber-100">
                     <div className="flex items-center mb-4">
                       <div className="bg-amber-100 p-3 rounded-full mr-4">
                         <FaCoffee className="text-amber-600 text-xl" />
                       </div>
                       <h3 className="text-2xl font-bold text-amber-800">
-                        The Perpetual Brew
+                        Cafeaua fără sfârșit
                       </h3>
                     </div>
                     <p className="text-gray-600 mb-4">
-                      Our 24/7 coffee and tea bar features single-origin beans,
-                      rare tea leaves, and artisanal brewing methods. Enjoy
-                      complimentary biscotti with every pour.
+                      Barul nostru de cafea și ceai, deschis 24/7, oferă boabe
+                      dintr-o singură origine, frunze de ceai rare și metode
+                      artizanale de preparare. Primiți biscotti din partea casei
+                      la fiecare ceașcă.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">
                         Ethiopian Yirgacheffe
                       </span>
                       <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">
-                        Matcha Ceremonial Grade
+                        Matcha de calitate ceremonială
                       </span>
                       <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">
-                        Cold Brew Tasting Flights
+                        Degustări de cold brew
                       </span>
                     </div>
                     <div className="flex items-center text-amber-600 mt-4">
                       <FaRegClock className="mr-2" />
-                      <span className="font-medium">Available anytime</span>
+                      <span className="font-medium">Disponibil oricând</span>
                     </div>
                   </div>
                 </motion.div>
                 <motion.div
-                  className="md:w-1/2 order-1 md:order-1"
+                  className="w-full md:w-1/2 md:p-6 order-2 md:order-1"
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, margin: "-100px" }}
@@ -530,15 +534,15 @@ const AboutCafeBeatch = () => {
                   <div className="h-64 md:h-80 rounded-xl overflow-hidden shadow-lg border-4 border-white relative">
                     <motion.img
                       src={coffee}
-                      alt="Coffee and tea service"
+                      alt="Cafea și ceai"
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.5 }}
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                       <p className="text-white text-sm font-light">
-                        "The sea air makes our espresso taste sweeter" - Marco,
-                        Head Barista
+                        „Aerul mării face ca espresso-ul nostru să fie mai
+                        dulce” - Marco, Barista-șef
                       </p>
                     </div>
                   </div>
@@ -563,11 +567,11 @@ const AboutCafeBeatch = () => {
                 <FaBirthdayCake className="text-amber-600 text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-amber-800 mb-3">
-                Special Events
+                Evenimente speciale
               </h3>
               <p className="text-gray-600">
-                Host your celebrations with our customizable event packages and
-                dedicated service teams.
+                Organizați-vă sărbătorile cu pachetele noastre personalizabile
+                pentru evenimente și echipe de servire dedicate.
               </p>
             </motion.div>
             <motion.div
@@ -576,26 +580,14 @@ const AboutCafeBeatch = () => {
               whileHover={{ y: -10 }}
             >
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-amber-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+                <FaLeaf className="text-amber-600 text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-amber-800 mb-3">
-                Seasonal Specials
+                Specialități de sezon
               </h3>
               <p className="text-gray-600">
-                Rotating menu featuring the best seasonal ingredients and
-                limited-time creations.
+                Meniu schimbat periodic, cu cele mai bune ingrediente de sezon
+                și creații disponibile pentru o perioadă limitată.
               </p>
             </motion.div>
             <motion.div
@@ -619,11 +611,11 @@ const AboutCafeBeatch = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-amber-800 mb-3">
-                Members Club
+                Clubul membrilor
               </h3>
               <p className="text-gray-600">
-                Exclusive benefits for members including priority booking and
-                special tasting events.
+                Beneficii exclusive pentru membri, inclusiv rezervare prioritară
+                și evenimente speciale de degustare.
               </p>
             </motion.div>
           </motion.div>
@@ -637,7 +629,7 @@ const AboutCafeBeatch = () => {
           variants={scaleUp}
         >
           <h3 className="text-2xl md:text-3xl font-bold text-amber-800 mb-6 font-serif">
-            Ready for your culinary journey?
+            Sunteți gata pentru călătoria culinară?
           </h3>
           <motion.button
             onClick={() => {
@@ -648,7 +640,7 @@ const AboutCafeBeatch = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Reserve Your Table
+            Rezervați-vă masa
           </motion.button>
         </motion.div>
       </div>

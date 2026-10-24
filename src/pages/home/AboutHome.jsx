@@ -12,12 +12,12 @@ const AboutHome = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const imageGallery = [
-    { image: about1, alt: "Beach view of Divine Kitchen Café" },
-    { image: about2, alt: "Oceanfront dining area" },
-    { image: about3, alt: "Private function venue" },
-    { image: about4, alt: "Cocktail bar at sunset" },
-    { image: about5, alt: "On-beach dining experience" },
-    { image: about6, alt: "Majestic Atlantic Ocean view" },
+    { image: about1, alt: "Vedere spre plajă de la Divine Kitchen Café" },
+    { image: about2, alt: "Zonă de dining cu vedere la ocean" },
+    { image: about3, alt: "Spațiu pentru evenimente private" },
+    { image: about4, alt: "Bar de cocktailuri la apus" },
+    { image: about5, alt: "Experiență culinară pe plajă" },
+    { image: about6, alt: "Priveliște maiestuoasă asupra Oceanului Atlantic" },
   ];
 
   useEffect(() => {
@@ -64,18 +64,18 @@ const AboutHome = () => {
           className=""
         >
           <h2 className="text-gray-800 text-2xl md:text-3xl font-semibold mb-4 font-merriweather">
-            About The Divine Kitchen Café & Beach
+            Despre Divine Kitchen Café & Beach
           </h2>
 
           <p className="font-lobster leading-relaxed text-2xl md:text-3xl lg:text-4xl text-[#ff2709] mb-6">
-            Where Coastal Cool Meets Effortless Charm
+            Unde răcoarea coastei întâlnește farmecul natural
           </p>
 
           <div className="space-y-4">
             {[
-              "The Divine Kitchen Café & Beach isn’t just a place, it's a vibe. Perched right on the shoreline, this seaside sanctuary blends barefoot luxury with a splash of playful energy, offering an experience that feels both refreshingly relaxed and delightfully unexpected.",
-              "Think sun-soaked decks, breezy bars, and the gentle rhythm of waves setting the scene. Whether you're sipping cocktails at one of our five vibrant bars, celebrating in one of nine private venues, or dining with your toes in the sand, every moment is designed to feel like a mini escape, bold, beautiful, and unforgettable.",
-              "More than a café. More than a beach. It’s simply Divine.",
+              "Divine Kitchen Café & Beach nu este doar un loc, este o stare de spirit. Așezat chiar pe țărm, acest refugiu de la malul mării îmbină luxul relaxat, desculț, cu o doză de energie jucăușă, oferind o experiență în același timp odihnitoare și surprinzător de încântătoare.",
+              "Imaginați-vă terase scăldate în soare, baruri răcorite de briză și ritmul blând al valurilor. Fie că savurați cocktailuri la unul dintre cele cinci baruri pline de viață, sărbătoriți într-unul dintre cele nouă spații private sau luați masa cu picioarele în nisip, fiecare moment este gândit ca o mică evadare: îndrăzneață, frumoasă și de neuitat.",
+              "Mai mult decât o cafenea. Mai mult decât o plajă. Este pur și simplu Divine.",
             ].map((paragraph, index) => (
               <motion.p
                 key={index}
@@ -104,7 +104,7 @@ const AboutHome = () => {
             variants={buttonVariants}
             className="bg-gradient-to-r mt-10 from-[#ff2709] to-[#ffaa13] text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg"
           >
-            Reserve a Table
+            Rezervă o masă
           </motion.button>
         </motion.div>
 
@@ -140,7 +140,7 @@ const AboutHome = () => {
                     ? "bg-[#ffaa13] w-6"
                     : "bg-white/50"
                 }`}
-                aria-label={`View image ${index + 1}`}
+                aria-label={`Vezi imaginea ${index + 1}`}
               />
             ))}
           </div>

@@ -54,7 +54,7 @@ const BookingPopup = ({ onClose }) => {
         <div className="flex flex-col md:flex-row">
           <div className="bg-gradient-to-br from-[#ff2709] to-[#ffaa13] p-6 text-white md:w-1/3">
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">Booking at Divine Kitchen</h2>
+              <h2 className="text-2xl font-bold">Rezervare la Divine Kitchen</h2>
               <button
                 onClick={onClose}
                 className="text-white hover:text-gray-200"
@@ -65,7 +65,7 @@ const BookingPopup = ({ onClose }) => {
 
             <div className="mb-4 flex items-center">
               <FiCalendar className="mr-2" size={20} />
-              <span className="font-medium">Select Date</span>
+              <span className="font-medium">Selectați data</span>
             </div>
 
             <DatePicker
@@ -84,7 +84,7 @@ const BookingPopup = ({ onClose }) => {
                 <div className="flex items-center text-gray-500 mb-1">
                   <FiUsers className="mr-2" />
                   <label htmlFor="guests" className="text-sm font-medium">
-                    Number of Guests
+                    Număr de invitați
                   </label>
                 </div>
                 <select
@@ -96,10 +96,10 @@ const BookingPopup = ({ onClose }) => {
                 >
                   {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                     <option key={num} value={num}>
-                      {num} {num === 1 ? "person" : "people"}
+                      {num} {num === 1 ? "persoană" : "persoane"}
                     </option>
                   ))}
-                  <option value="9+">9+ people (large group)</option>
+                  <option value="9+">9+ persoane (grup mare)</option>
                 </select>
               </div>
 
@@ -107,7 +107,7 @@ const BookingPopup = ({ onClose }) => {
                 <div className="flex items-center text-gray-500 mb-1">
                   <FiClock className="mr-2" />
                   <label htmlFor="time" className="text-sm font-medium">
-                    Time of Arrival
+                    Ora sosirii
                   </label>
                 </div>
                 <select
@@ -118,7 +118,7 @@ const BookingPopup = ({ onClose }) => {
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   required
                 >
-                  <option value="">Select time</option>
+                  <option value="">Selectați ora</option>
                   {Array.from({ length: 11 }, (_, i) => {
                     const hour = i + 12;
                     return [`${hour}:00`, `${hour}:30`];
@@ -139,7 +139,7 @@ const BookingPopup = ({ onClose }) => {
                     htmlFor="tablePreference"
                     className="text-sm font-medium"
                   >
-                    Table Preference
+                    Preferință masă
                   </label>
                 </div>
                 <select
@@ -149,11 +149,11 @@ const BookingPopup = ({ onClose }) => {
                   onChange={handleInputChange}
                   className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 >
-                  <option value="">No preference</option>
-                  <option value="window">Window table</option>
-                  <option value="outside">Outside terrace</option>
-                  <option value="quiet">Quiet corner</option>
-                  <option value="center">Center of restaurant</option>
+                  <option value="">Fără preferință</option>
+                  <option value="window">Masă la fereastră</option>
+                  <option value="outside">Terasă exterioară</option>
+                  <option value="quiet">Colț liniștit</option>
+                  <option value="center">Centrul restaurantului</option>
                 </select>
               </div>
 
@@ -161,7 +161,7 @@ const BookingPopup = ({ onClose }) => {
                 <div className="flex items-center text-gray-500 mb-1">
                   <FiUser className="mr-2" />
                   <label htmlFor="name" className="text-sm font-medium">
-                    Full Name
+                    Nume complet
                   </label>
                 </div>
                 <input
@@ -179,7 +179,7 @@ const BookingPopup = ({ onClose }) => {
                 <div className="flex items-center text-gray-500 mb-1">
                   <FiMail className="mr-2" />
                   <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                    E-mail
                   </label>
                 </div>
                 <input
@@ -200,7 +200,7 @@ const BookingPopup = ({ onClose }) => {
                   whileTap={{ scale: 0.98 }}
                   className="w-full bg-gradient-to-r from-[#ff2709] to-[#ffaa13] text-white py-3 px-6 rounded-lg font-medium shadow-md hover:shadow-lg transition-all duration-300"
                 >
-                  Confirm Booking
+                  Confirmați rezervarea
                 </motion.button>
               </div>
             </form>

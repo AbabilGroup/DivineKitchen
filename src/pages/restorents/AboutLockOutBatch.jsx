@@ -38,24 +38,24 @@ const LockOutBeach = () => {
   const experiences = [
     {
       id: "sunset",
-      title: "Sunset Sessions",
+      title: "Sesiuni la apus",
       icon: <GiSunset className="text-3xl" />,
       image: sunsetSession,
-      description: "Live music as the sun melts into the horizon",
+      description: "Muzică live în timp ce soarele se topește în orizont",
     },
     {
       id: "dining",
-      title: "Beachfront Dining",
+      title: "Dining pe malul mării",
       icon: <MdOutlineRestaurant className="text-3xl" />,
       image: beachDining,
-      description: "Gourmet cuisine with toes in the sand",
+      description: "Bucătărie gourmet cu picioarele în nisip",
     },
     {
       id: "vip",
-      title: "VIP Cabanas",
+      title: "Cabane VIP",
       icon: <MdEventSeat className="text-3xl" />,
       image: vipCabana,
-      description: "Private oceanfront retreats with dedicated service",
+      description: "Refugii private pe malul oceanului, cu servicii dedicate",
     },
   ];
 
@@ -85,7 +85,7 @@ const LockOutBeach = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            The Ultimate Beach Club Experience
+            Experiența supremă de beach club
           </motion.p>
 
           <motion.div
@@ -95,23 +95,24 @@ const LockOutBeach = () => {
             variants={staggerContainer}
           >
             <motion.p variants={fadeIn}>
-              LockOut Beach embodies the vibrant spirit of coastal living where
-              golden sands, good vibes, and great company come together. With
-              stunning ocean views and an electrifying atmosphere, it's your
-              go-to destination for sun-soaked days and unforgettable nights.
+              LockOut Beach întruchipează spiritul vibrant al vieții de pe
+              coastă, acolo unde nisipul auriu, starea bună și compania plăcută
+              se întâlnesc. Cu priveliști uimitoare asupra oceanului și o
+              atmosferă electrizantă, este destinația ideală pentru zile
+              însorite și nopți de neuitat.
             </motion.p>
             <motion.p variants={fadeIn}>
-              From sunrise lounging to sunset sessions, LockOut Beach is where
-              rhythm meets relaxation. Whether you're sipping signature
-              cocktails at the bar, dancing barefoot to live DJ sets, or
-              indulging in fresh seaside cuisine, every moment is curated for
-              pure coastal bliss.
+              De la relaxarea la răsărit până la sesiunile de la apus, LockOut
+              Beach este locul unde ritmul întâlnește relaxarea. Fie că savurați
+              cocktailuri de autor la bar, dansați desculți pe seturi DJ live
+              sau vă răsfățați cu preparate proaspete de la malul mării, fiecare
+              moment este gândit pentru o fericire autentică pe coastă.
             </motion.p>
             <motion.p variants={fadeIn}>
-              Blending laid-back elegance with high-energy fun, LockOut Beach
-              offers a refreshing escape from the everyday where waves meet
-              wonder and every experience is a celebration of life, music, and
-              the magic of the shoreline.
+              Îmbinând eleganța relaxată cu distracția plină de energie, LockOut
+              Beach oferă o evadare revigorantă din cotidian, unde valurile
+              întâlnesc minunea și fiecare experiență este o celebrare a vieții,
+              a muzicii și a magiei țărmului.
             </motion.p>
             <br />
             <br />
@@ -137,7 +138,7 @@ const LockOutBeach = () => {
               }}
               className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              Reserve Now
+              Rezervă acum
             </button>
           </motion.div>
 
@@ -152,11 +153,11 @@ const LockOutBeach = () => {
               },
               {
                 icon: <FaUmbrellaBeach className="text-amber-500 mr-2" />,
-                text: "Daybeds",
+                text: "Paturi de plajă",
               },
               {
                 icon: <FaCocktail className="text-amber-500 mr-2" />,
-                text: "Cocktails",
+                text: "Cocktailuri",
               },
               {
                 icon: (
@@ -174,7 +175,7 @@ const LockOutBeach = () => {
                     />
                   </svg>
                 ),
-                text: "Ocean View",
+                text: "Vedere la ocean",
               },
             ].map((item, index) => (
               <motion.div
@@ -205,30 +206,31 @@ const LockOutBeach = () => {
                 className="text-3xl font-bold text-amber-600 mb-6 font-serif"
                 variants={fadeIn}
               >
-                Our Story
+                Povestea noastră
               </motion.h2>
               <motion.div
                 className="space-y-6 text-gray-700"
                 variants={staggerContainer}
               >
                 <motion.p variants={fadeIn}>
-                  LockOut Beach was born from a simple yet bold dream to create
-                  a beachfront escape where laid-back luxury meets the untamed
-                  beauty of the sea. What began as a vision has grown into a
-                  beloved destination, blending effortless style with the soul
-                  of coastal living.
+                  LockOut Beach s-a născut dintr-un vis simplu, dar îndrăzneț:
+                  crearea unui refugiu pe malul mării, unde luxul relaxat
+                  întâlnește frumusețea sălbatică a mării. Ceea ce a început ca
+                  o viziune a devenit o destinație îndrăgită, care îmbină stilul
+                  natural cu sufletul vieții de pe coastă.
                 </motion.p>
                 <motion.p variants={fadeIn}>
-                  Built on passion, creativity, and a deep love for the beach
-                  lifestyle, LockOut Beach has become a go-to haven for those
-                  seeking more than just a day in the sun. From our handcrafted
-                  cocktails to our signature sunsets, every detail is designed
-                  to elevate your experience.
+                  Construit pe pasiune, creativitate și o dragoste profundă
+                  pentru stilul de viață de pe plajă, LockOut Beach a devenit
+                  refugiul preferat al celor care caută mai mult decât o zi la
+                  soare. De la cocktailurile preparate manual până la apusurile
+                  noastre emblematice, fiecare detaliu este gândit pentru a vă
+                  înnobila experiența.
                 </motion.p>
                 <motion.p variants={fadeIn}>
-                  Today, we're proud to be celebrated as the region's top beach
-                  club where unforgettable memories are made, one wave at a
-                  time.
+                  Astăzi, suntem mândri să fim recunoscuți drept cel mai bun
+                  beach club din regiune, locul unde se creează amintiri de
+                  neuitat, val după val.
                 </motion.p>
               </motion.div>
             </div>
@@ -258,7 +260,7 @@ const LockOutBeach = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Premier Experiences
+            Experiențe de top
           </motion.h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -313,19 +315,20 @@ const LockOutBeach = () => {
                   className="text-3xl font-bold text-amber-600 mb-6 font-serif"
                   variants={fadeIn}
                 >
-                  Our Venue
+                  Locația noastră
                 </motion.h2>
                 <motion.p className="text-gray-700 mb-6" variants={fadeIn}>
-                  Whether you're planning an intimate soirée or a grand
-                  celebration, LockOut Beach offers an elegant and versatile
-                  setting designed to bring your vision to life.
+                  Fie că plănuiți o seară intimă sau o sărbătoare grandioasă,
+                  LockOut Beach oferă un cadru elegant și versatil, conceput
+                  pentru a vă transforma viziunea în realitate.
                 </motion.p>
                 <motion.p className="text-gray-700 mb-8" variants={fadeIn}>
-                  Our beachfront oasis is ideal for a wide range of events from
-                  corporate gatherings and luxury weddings to private
-                  celebrations, product launches, engagement parties, and
-                  milestone occasions. Each experience is thoughtfully tailored
-                  to reflect your style and exceed expectations.
+                  Oaza noastră de pe malul mării este ideală pentru o gamă largă
+                  de evenimente, de la întâlniri corporative și nunți de lux
+                  până la petreceri private, lansări de produse, logodne și
+                  aniversări importante. Fiecare experiență este atent
+                  personalizată pentru a vă reflecta stilul și a depăși
+                  așteptările.
                 </motion.p>
 
                 <motion.div
@@ -335,23 +338,23 @@ const LockOutBeach = () => {
                   {[
                     {
                       icon: <GiWaveSurfer className="text-2xl" />,
-                      title: "Capacity",
-                      value: "10 - 1,000 Guests",
+                      title: "Capacitate",
+                      value: "10 - 1.000 de invitați",
                     },
                     {
                       icon: <MdEventSeat className="text-2xl" />,
-                      title: "Ideal For",
-                      value: "Weddings & Events",
+                      title: "Ideal pentru",
+                      value: "Nunți și evenimente",
                     },
                     {
                       icon: <GiSandsOfTime className="text-2xl" />,
-                      title: "Availability",
-                      value: "Open Year-Round",
+                      title: "Disponibilitate",
+                      value: "Deschis tot anul",
                     },
                     {
                       icon: <FaUtensils className="text-2xl" />,
-                      title: "Cuisine",
-                      value: "Bespoke Menus",
+                      title: "Bucătărie",
+                      value: "Meniuri personalizate",
                     },
                   ].map((item, index) => (
                     <motion.div
@@ -378,20 +381,20 @@ const LockOutBeach = () => {
                     }}
                     className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
                   >
-                    Reserve Your Exclusive Experience
+                    Rezervați-vă experiența exclusivă
                   </button>
                 </motion.div>
               </div>
               <div className="bg-gray-800 p-10 flex items-center justify-center">
                 <div className="text-white text-center">
                   <FaMapMarkerAlt className="text-4xl mx-auto mb-4 text-amber-300" />
-                  <h3 className="text-xl font-bold mb-2">Visit Us</h3>
+                  <h3 className="text-xl font-bold mb-2">Vizitați-ne</h3>
                   <p className="mb-6">
                     Ul. Hrvoja Macanovića 44A, <br /> 10000, Zagreb, Croatia
                   </p>
                   <div className="flex justify-center space-x-4">
                     <button className="bg-white text-blue-900 py-2 px-6 rounded-full text-sm font-medium">
-                      Get Directions
+                      Indicații de orientare
                     </button>
                   </div>
                 </div>
@@ -410,7 +413,7 @@ const LockOutBeach = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Ready for Your Coastal Escape?
+            Sunteți gata pentru evadarea pe coastă?
           </motion.h2>
           <motion.p
             className="text-xl mb-10 max-w-2xl mx-auto"
@@ -419,8 +422,7 @@ const LockOutBeach = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Book your table or cabana today and experience the magic of LockOut
-            Beach
+            Rezervați-vă astăzi masa sau cabana și trăiți magia LockOut Beach
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -435,7 +437,7 @@ const LockOutBeach = () => {
               }}
               className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-4 px-12 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              Reserve Now
+              Rezervă acum
             </button>
           </motion.div>
         </div>

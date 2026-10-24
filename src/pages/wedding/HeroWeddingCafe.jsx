@@ -99,7 +99,7 @@ const HeroWeddingCafe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry! We will contact you soon.");
+    alert("Vă mulțumim pentru solicitare! Vă vom contacta în curând.");
   };
 
   const visibleImages = weddingImages.slice(
@@ -192,7 +192,7 @@ const HeroWeddingCafe = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           src={heroCafe}
-          alt="Divine Kitchen wedding venue"
+          alt="Locație pentru nunți Divine Kitchen"
           className="w-full h-full object-cover"
           loading="eager"
         />
@@ -208,7 +208,7 @@ const HeroWeddingCafe = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-4xl md:text-6xl font-serif font-bold text-white mb-6"
           >
-            Weddings at <span className="text-amber-300">Divine Kitchen</span>
+            Nunți la <span className="text-amber-300">Divine Kitchen</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -216,7 +216,7 @@ const HeroWeddingCafe = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="text-xl md:text-2xl text-white mb-8 max-w-2xl"
           >
-            Where culinary excellence meets romantic seaside celebrations
+            Unde excelența culinară întâlnește sărbătorile romantice de la malul mării
           </motion.p>
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
@@ -230,7 +230,7 @@ const HeroWeddingCafe = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            Plan Your Special Day
+            Planificați-vă ziua specială
           </motion.button>
         </motion.div>
       </section>
@@ -247,16 +247,16 @@ const HeroWeddingCafe = () => {
             variants={itemVariants}
             className="text-3xl md:text-4xl font-serif font-bold mb-6 text-amber-800"
           >
-            Weddings at Divine Kitchen
+            Nunți la Divine Kitchen
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-700 leading-relaxed"
           >
-            Divine Kitchen offers intimate and memorable wedding celebrations
-            along the beautiful Zandvoort coastline. Enjoy the soothing sounds
-            of the waves and stunning seaside views to make your special day
-            truly Divine.
+            Divine Kitchen oferă nunți intime și memorabile de-a lungul
+            frumoasei coaste Zandvoort. Bucurați-vă de sunetul liniștitor al
+            valurilor și de priveliștile uimitoare ale mării pentru ca ziua
+            dumneavoastră specială să fie cu adevărat Divine.
           </motion.p>
         </div>
       </motion.section>
@@ -273,7 +273,7 @@ const HeroWeddingCafe = () => {
             variants={itemVariants}
             className="text-3xl font-serif font-bold mb-12 text-center text-amber-800"
           >
-            Our Wedding Gallery
+            Galeria noastră de nunți
           </motion.h2>
 
           <motion.div variants={itemVariants} className="relative group">
@@ -299,14 +299,14 @@ const HeroWeddingCafe = () => {
                   <div className="relative overflow-hidden rounded-xl shadow-lg h-64 md:h-80 lg:h-96 transform transition-all duration-300 hover:shadow-xl">
                     <motion.img
                       src={image}
-                      alt={`Wedding at Divine Kitchen ${index + 1}`}
+                      alt={`Nuntă la Divine Kitchen ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                       loading="lazy"
                       whileHover={{ scale: 1.05 }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                       <span className="text-white text-lg font-serif">
-                        Wedding Celebration #{index + 1}
+                        Nuntă #{index + 1}
                       </span>
                     </div>
                   </div>
@@ -346,7 +346,7 @@ const HeroWeddingCafe = () => {
                 className={`w-3 h-3 rounded-full transition-colors ${
                   currentIndex === index ? "bg-amber-600 w-6" : "bg-gray-300"
                 }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`Mergi la diapozitivul ${index + 1}`}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
               />
@@ -370,7 +370,7 @@ const HeroWeddingCafe = () => {
           >
             <motion.img
               src={venueImage}
-              alt="Lookout Beach venue at Divine Kitchen"
+              alt="Locația Lookout Beach de la Divine Kitchen"
               className="w-full h-auto object-cover"
               loading="lazy"
               whileHover={{ scale: 1.02 }}
@@ -383,7 +383,7 @@ const HeroWeddingCafe = () => {
               variants={itemVariants}
               className="text-3xl font-serif font-bold text-amber-800"
             >
-              Our Venue
+              Locația noastră
             </motion.h2>
             <motion.h3
               variants={itemVariants}
@@ -403,8 +403,8 @@ const HeroWeddingCafe = () => {
                 <FaHeart className="text-amber-600 text-xl" />
               </motion.div>
               <div>
-                <h4 className="font-semibold text-gray-700">Exclusive Use:</h4>
-                <p className="text-gray-600">200 - 800 Guests</p>
+                <h4 className="font-semibold text-gray-700">Utilizare exclusivă:</h4>
+                <p className="text-gray-600">200 - 800 de invitați</p>
               </div>
             </motion.div>
 
@@ -412,10 +412,11 @@ const HeroWeddingCafe = () => {
               variants={itemVariants}
               className="text-lg text-gray-700 leading-relaxed"
             >
-              Situated along the beautiful Zandvoort coastline, Divine Kitchen
-              is ideal for seated celebrations of 200 to 800 guests. Our
-              panoramic ocean views and elegant spaces create the perfect
-              backdrop for your special day.
+              Situat de-a lungul frumoasei coaste Zandvoort, Divine Kitchen este
+              ideal pentru evenimente cu locuri la masă pentru 200 până la 800
+              de invitați. Priveliștile panoramice asupra oceanului și spațiile
+              elegante creează decorul perfect pentru ziua dumneavoastră
+              specială.
             </motion.p>
 
             <motion.form
@@ -428,7 +429,7 @@ const HeroWeddingCafe = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Numele dumneavoastră"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -439,7 +440,7 @@ const HeroWeddingCafe = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone Number"
+                    placeholder="Număr de telefon"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -452,7 +453,7 @@ const HeroWeddingCafe = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="Adresă de e-mail"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   value={formData.email}
                   onChange={handleInputChange}
@@ -469,7 +470,7 @@ const HeroWeddingCafe = () => {
                     onChange={handleInputChange}
                     required
                   >
-                    <option value="">Number of guests</option>
+                    <option value="">Număr de invitați</option>
                     <option value="50-100">50-100</option>
                     <option value="100-200">100-200</option>
                     <option value="200-400">200-400</option>
@@ -484,10 +485,10 @@ const HeroWeddingCafe = () => {
                     onChange={handleInputChange}
                     required
                   >
-                    <option value="">Select Venue</option>
+                    <option value="">Selectați locația</option>
                     <option value="Lookout Beach">Lookout Beach</option>
-                    <option value="Oceanview Terrace">Oceanview Terrace</option>
-                    <option value="Grand Ballroom">Grand Ballroom</option>
+                    <option value="Oceanview Terrace">Terasa cu vedere la ocean</option>
+                    <option value="Grand Ballroom">Marea sală de bal</option>
                   </select>
                 </motion.div>
               </div>
@@ -495,7 +496,7 @@ const HeroWeddingCafe = () => {
               <motion.div whileHover={{ scale: 1.01 }}>
                 <textarea
                   name="request"
-                  placeholder="Special Requests"
+                  placeholder="Cerințe speciale"
                   rows="3"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                   value={formData.request}
@@ -512,7 +513,7 @@ const HeroWeddingCafe = () => {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Submit Inquiry
+                Trimiteți solicitarea
               </motion.button>
             </motion.form>
           </motion.div>
@@ -531,7 +532,7 @@ const HeroWeddingCafe = () => {
             variants={itemVariants}
             className="text-3xl font-serif font-bold mb-16 text-center text-amber-800"
           >
-            Why Choose Divine Kitchen
+            De ce să alegeți Divine Kitchen
           </motion.h2>
 
           <motion.div
@@ -553,11 +554,12 @@ const HeroWeddingCafe = () => {
                 <FaHeart className="text-amber-600 text-2xl" />
               </motion.div>
               <h3 className="text-xl font-serif font-bold mb-3 text-amber-800">
-                Romantic Ambiance
+                Atmosferă romantică
               </h3>
               <p className="text-gray-700">
-                Breathtaking ocean views and elegant decor create the perfect
-                romantic atmosphere for your special day.
+                Priveliștile uimitoare asupra oceanului și decorul elegant
+                creează atmosfera romantică perfectă pentru ziua dumneavoastră
+                specială.
               </p>
             </motion.div>
 
@@ -576,11 +578,12 @@ const HeroWeddingCafe = () => {
                 <FaGlassCheers className="text-amber-600 text-2xl" />
               </motion.div>
               <h3 className="text-xl font-serif font-bold mb-3 text-amber-800">
-                Gourmet Excellence
+                Excelență gourmet
               </h3>
               <p className="text-gray-700">
-                Award-winning chefs create exquisite menus tailored to your
-                preferences, using the freshest local ingredients.
+                Bucătari premiați creează meniuri rafinate adaptate
+                preferințelor dumneavoastră, folosind cele mai proaspete
+                ingrediente locale.
               </p>
             </motion.div>
 
@@ -599,11 +602,11 @@ const HeroWeddingCafe = () => {
                 <FaRing className="text-amber-600 text-2xl" />
               </motion.div>
               <h3 className="text-xl font-serif font-bold mb-3 text-amber-800">
-                Custom Packages
+                Pachete personalizate
               </h3>
               <p className="text-gray-700">
-                Flexible options to create your perfect celebration, from
-                intimate gatherings to grand receptions.
+                Opțiuni flexibile pentru a vă crea sărbătoarea perfectă, de la
+                întâlniri intime până la recepții grandioase.
               </p>
             </motion.div>
 
@@ -622,11 +625,11 @@ const HeroWeddingCafe = () => {
                 <FaCamera className="text-amber-600 text-2xl" />
               </motion.div>
               <h3 className="text-xl font-serif font-bold mb-3 text-amber-800">
-                Picture Perfect
+                Ca în poze
               </h3>
               <p className="text-gray-700">
-                Stunning natural backdrops and professional lighting ensure your
-                wedding photos are absolutely magical.
+                Fundalurile naturale uimitoare și iluminatul profesionist fac ca
+                fotografiile de nuntă să fie absolut magice.
               </p>
             </motion.div>
           </motion.div>

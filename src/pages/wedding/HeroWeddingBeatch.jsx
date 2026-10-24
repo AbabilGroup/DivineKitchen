@@ -127,7 +127,7 @@ const HeroWeddingBeatch = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry! We will contact you soon.");
+    alert("Vă mulțumim pentru solicitare! Vă vom contacta în curând.");
   };
 
   const visibleImages = weddingImages.slice(
@@ -144,7 +144,7 @@ const HeroWeddingBeatch = () => {
       >
         <img
           src={heroImage}
-          alt="Elegant wedding at Divine Kitchen"
+          alt="Nuntă elegantă la Divine Kitchen"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -162,7 +162,7 @@ const HeroWeddingBeatch = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Weddings at <span className="text-amber-200">Divine Kitchen</span>
+            Nunți la <span className="text-amber-200">Divine Kitchen</span>
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-white mb-8 max-w-2xl"
@@ -170,7 +170,7 @@ const HeroWeddingBeatch = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Where dreams meet the ocean, and love stories begin
+            Unde visurile întâlnesc oceanul și încep poveștile de dragoste
           </motion.p>
           <motion.button
             onClick={() => {
@@ -184,7 +184,7 @@ const HeroWeddingBeatch = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Plan Your Special Day
+            Planificați-vă ziua specială
           </motion.button>
         </motion.div>
       </motion.div>
@@ -201,13 +201,13 @@ const HeroWeddingBeatch = () => {
           className="text-3xl font-serif font-bold mb-6 text-amber-800"
           variants={fadeIn}
         >
-          Weddings at Divine Kitchen
+          Nunți la Divine Kitchen
         </motion.h2>
         <motion.p className="text-lg text-gray-600 mb-8" variants={fadeIn}>
-          Divine Kitchen offers intimate and memorable wedding celebrations
-          along the beautiful Zandvoort coastline. Enjoy the soothing sounds of
-          the waves and stunning seaside views to make your special day truly
-          Divine.
+          Divine Kitchen oferă nunți intime și memorabile de-a lungul frumoasei
+          coaste Zandvoort. Bucurați-vă de sunetul liniștitor al valurilor și de
+          priveliștile uimitoare ale mării pentru ca ziua dumneavoastră specială
+          să fie cu adevărat Divine.
         </motion.p>
       </motion.div>
 
@@ -227,7 +227,7 @@ const HeroWeddingBeatch = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Some images of weddings on the beach
+            Câteva imagini de la nunți pe plajă
           </motion.h2>
 
           <div className="relative">
@@ -259,7 +259,7 @@ const HeroWeddingBeatch = () => {
                     >
                       <img
                         src={image}
-                        alt={`Wedding at Divine Kitchen ${
+                        alt={`Nuntă la Divine Kitchen ${
                           currentIndex + index + 1
                         }`}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
@@ -309,7 +309,7 @@ const HeroWeddingBeatch = () => {
                 className={`w-3 h-3 mx-1 rounded-full ${
                   currentIndex === index ? "bg-amber-600" : "bg-gray-300"
                 }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`Mergi la diapozitivul ${index + 1}`}
                 whileHover={{ scale: 1.2 }}
               />
             ))}
@@ -330,7 +330,7 @@ const HeroWeddingBeatch = () => {
           <motion.div variants={fadeIn}>
             <motion.img
               src={venueImage}
-              alt="Lookout Beach venue at Divine Kitchen"
+              alt="Locația Lookout Beach de la Divine Kitchen"
               className="w-full h-auto rounded-lg shadow-lg"
               loading="lazy"
               whileHover={{ scale: 1.02 }}
@@ -345,7 +345,7 @@ const HeroWeddingBeatch = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              Our Venue
+              Locația noastră
             </motion.h2>
             <motion.h3
               className="text-2xl font-serif font-semibold mb-4 text-amber-600"
@@ -363,8 +363,9 @@ const HeroWeddingBeatch = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              Situated along the beautiful Zandvoort coastline, Divine Kitchen
-              is ideal for seated celebrations of 40 to 150 guests.
+              Situat de-a lungul frumoasei coaste Zandvoort, Divine Kitchen este
+              ideal pentru evenimente cu locuri la masă pentru 40 până la 150 de
+              invitați.
             </motion.p>
             <motion.div
               className="mb-8"
@@ -374,9 +375,9 @@ const HeroWeddingBeatch = () => {
               transition={{ delay: 0.5 }}
             >
               <h4 className="text-xl font-serif font-semibold mb-2">
-                Exclusive Use:
+                Utilizare exclusivă:
               </h4>
-              <p className="text-gray-600">40 - 150 Guests</p>
+              <p className="text-gray-600">40 - 150 de invitați</p>
             </motion.div>
 
             <motion.form
@@ -392,7 +393,7 @@ const HeroWeddingBeatch = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Nume"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -403,7 +404,7 @@ const HeroWeddingBeatch = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone Number"
+                    placeholder="Număr de telefon"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -415,7 +416,7 @@ const HeroWeddingBeatch = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email Address"
+                  placeholder="Adresă de e-mail"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                   value={formData.email}
                   onChange={handleInputChange}
@@ -427,7 +428,7 @@ const HeroWeddingBeatch = () => {
                   <input
                     type="number"
                     name="guests"
-                    placeholder="Number of guests"
+                    placeholder="Număr de invitați"
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                     value={formData.guests}
                     onChange={handleInputChange}
@@ -442,17 +443,17 @@ const HeroWeddingBeatch = () => {
                     onChange={handleInputChange}
                     required
                   >
-                    <option value="">Select Venue</option>
+                    <option value="">Selectați locația</option>
                     <option value="Lookout Beach">Lookout Beach</option>
-                    <option value="Ocean Terrace">Ocean Terrace</option>
-                    <option value="Sunset Pavilion">Sunset Pavilion</option>
+                    <option value="Ocean Terrace">Terasa Oceanului</option>
+                    <option value="Sunset Pavilion">Pavilionul Apusului</option>
                   </select>
                 </motion.div>
               </div>
               <motion.div whileHover={{ scale: 1.01 }}>
                 <textarea
                   name="request"
-                  placeholder="Special Request"
+                  placeholder="Cerință specială"
                   rows="3"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
                   value={formData.request}
@@ -465,7 +466,7 @@ const HeroWeddingBeatch = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Submit
+                Trimite
               </motion.button>
             </motion.form>
           </motion.div>
@@ -484,7 +485,7 @@ const HeroWeddingBeatch = () => {
           className="text-3xl font-serif font-bold mb-16 text-center text-amber-800"
           variants={fadeIn}
         >
-          Why Choose Divine Kitchen
+          De ce să alegeți Divine Kitchen
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-16 px-4 max-w-6xl mx-auto">
@@ -493,29 +494,29 @@ const HeroWeddingBeatch = () => {
               icon: (
                 <FaHeart className="text-4xl text-amber-500 mx-auto mb-4" />
               ),
-              title: "Romantic Settings",
+              title: "Decoruri romantice",
               description:
-                "Breathtaking ocean views and intimate beachfront venues",
+                "Priveliști uimitoare asupra oceanului și locații intime pe malul mării",
             },
             {
               icon: (
                 <FaGlassCheers className="text-4xl text-amber-500 mx-auto mb-4" />
               ),
-              title: "Gourmet Catering",
-              description: "Exquisite menus crafted by our award-winning chefs",
+              title: "Catering gourmet",
+              description: "Meniuri rafinate create de bucătarii noștri premiați",
             },
             {
               icon: <FaRing className="text-4xl text-amber-500 mx-auto mb-4" />,
-              title: "Custom Packages",
-              description: "Tailored experiences for your perfect celebration",
+              title: "Pachete personalizate",
+              description: "Experiențe personalizate pentru sărbătoarea dumneavoastră perfectă",
             },
             {
               icon: (
                 <FaCamera className="text-4xl text-amber-500 mx-auto mb-4" />
               ),
-              title: "Photo Ready",
+              title: "Perfect pentru fotografii",
               description:
-                "Stunning backdrops for unforgettable wedding photos",
+                "Fundaluri uimitoare pentru fotografii de nuntă de neuitat",
             },
           ].map((item, index) => (
             <motion.div
@@ -554,7 +555,7 @@ const HeroWeddingBeatch = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Love Stories
+            Povești de dragoste
           </motion.h2>
           <motion.div
             className="bg-white p-8 rounded-lg shadow-md mb-8"
@@ -570,9 +571,9 @@ const HeroWeddingBeatch = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              "Our wedding at Divine Kitchen was beyond perfect. The team
-              anticipated our every need and created magic we'll remember
-              forever."
+              „Nunta noastră la Divine Kitchen a fost mai mult decât perfectă.
+              Echipa ne-a anticipat fiecare dorință și a creat o magie pe care o
+              vom ține minte pentru totdeauna.”
             </motion.p>
             <motion.p
               className="font-semibold text-amber-600"
@@ -581,7 +582,7 @@ const HeroWeddingBeatch = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.8 }}
             >
-              - Sarah & Michael
+              - Sarah și Michael
             </motion.p>
           </motion.div>
         </div>

@@ -11,22 +11,22 @@ const MenuHome = () => {
   const menuList = [
     {
       image: menu1,
-      text: "Full Menu",
+      text: "Meniu complet",
       pdf: "/pdfs/main-menu.pdf",
     },
     {
       image: menu2,
-      text: "Beverage Menu",
+      text: "Meniu de băuturi",
       pdf: "/pdfs/wine-list.pdf",
     },
     {
       image: menu3,
-      text: "Cocktail List",
+      text: "Listă de cocktailuri",
       pdf: "/pdfs/cocktail-menu.pdf",
     },
     {
       image: menu4,
-      text: "Wine Experts",
+      text: "Experți în vinuri",
       pdf: "/pdfs/sommeliers.pdf",
     },
   ];
@@ -95,18 +95,18 @@ const MenuHome = () => {
             variants={item}
             className="text-4xl md:text-5xl lg:text-6xl font-merriweather uppercase tracking-widest font-bold text-white mb-4"
           >
-            Our Menus
+            Meniurile noastre
           </motion.h1>
 
           <motion.img
             variants={scaleUp}
             src={manestach}
-            alt="Divine Kitchen decorative element"
+            alt="Element decorativ Divine Kitchen"
             className="mx-auto h-20 w-auto opacity-80"
           />
 
           <motion.p variants={fadeIn} className="mt-4 text-gray-600 italic">
-            "Where every dish tells a story"
+            „Unde fiecare preparat spune o poveste”
           </motion.p>
         </motion.div>
 
@@ -157,7 +157,7 @@ const MenuHome = () => {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
                 >
-                  <span>View Menu</span>
+                  <span>Vezi meniul</span>
                   <FaArrowRight className="text-lg" />
                 </motion.button>
               </div>
@@ -182,7 +182,7 @@ const MenuHome = () => {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            reservations
+            rezervări
           </motion.button>
 
           <motion.div
@@ -194,7 +194,7 @@ const MenuHome = () => {
             }}
           >
             <button className="text-white px-8 py-3 uppercase text-lg font-semibold">
-              More information
+              Mai multe informații
             </button>
           </motion.div>
         </motion.div>

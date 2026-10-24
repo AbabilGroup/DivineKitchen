@@ -59,7 +59,7 @@ const ArtFashion = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for your inquiry! We'll contact you soon.");
+    alert("Vă mulțumim pentru solicitare! Vă vom contacta în curând.");
   };
 
   // Animation variants
@@ -79,7 +79,7 @@ const ArtFashion = () => {
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <motion.img
           src={heroImage}
-          alt="Divine Kitchen Art & Fashion Events"
+          alt="Evenimente de artă și modă Divine Kitchen"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -94,7 +94,7 @@ const ArtFashion = () => {
           >
             <img
               src={"/logo2.png"}
-              alt="Company Logo"
+              alt="Logo companie"
               className="h-24 lg:h-32 w-auto drop-shadow-lg"
             />
           </motion.div>
@@ -105,7 +105,7 @@ const ArtFashion = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-3xl"
           >
-            Art & Fashion Events
+            Evenimente de artă și modă
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -113,7 +113,7 @@ const ArtFashion = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-xl md:text-2xl text-white mb-8 max-w-2xl"
           >
-            Where Style Meets Flavor
+            Unde stilul întâlnește gustul
           </motion.p>
 
           {/* Added Button */}
@@ -127,7 +127,7 @@ const ArtFashion = () => {
             transition={{ delay: 0.9, duration: 0.8 }}
           >
             <button className="px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              Book Your Event
+              Rezervați-vă evenimentul
             </button>
           </motion.div>
         </div>
@@ -143,11 +143,11 @@ const ArtFashion = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-            From high-end fashion shows to contemporary gallery openings, Divine
-            Kitchen brings culinary artistry to the heart of creative
-            expression. We believe food should be as inspiring as the event
-            itself—thoughtfully crafted, beautifully plated, and tailored to
-            your aesthetic.
+            De la prezentări de modă exclusiviste la vernisaje de galerii
+            contemporane, Divine Kitchen aduce arta culinară în inima expresiei
+            creative. Credem că mâncarea trebuie să fie la fel de inspirată ca
+            evenimentul însuși — atent creată, frumos prezentată și adaptată
+            esteticii dumneavoastră.
           </p>
           <div className="w-24 h-1 bg-amber-600 mx-auto mb-12"></div>
         </motion.div>
@@ -165,12 +165,14 @@ const ArtFashion = () => {
               {currentIndices.map((index, i) => (
                 <motion.div
                   key={i}
-                  className="w-full md:w-1/3 flex-shrink-0 overflow-hidden rounded-lg shadow-lg"
+                  className={`flex-1 min-w-0 overflow-hidden rounded-lg shadow-lg ${
+                    i > 0 ? "hidden md:block" : ""
+                  }`}
                   whileHover={{ scale: 1.03 }}
                 >
                   <img
                     src={artImages[index]}
-                    alt={`Art & Fashion Event ${index + 1}`}
+                    alt={`Eveniment de artă și modă ${index + 1}`}
                     className="w-full h-64 md:h-80 object-cover"
                   />
                 </motion.div>
@@ -203,7 +205,7 @@ const ArtFashion = () => {
             variants={fadeIn}
             className="text-3xl md:text-4xl font-bold text-center text-amber-600 mb-12"
           >
-            Culinary Artistry for Creative Events
+            Artă culinară pentru evenimente creative
           </motion.h2>
 
           <motion.div
@@ -220,12 +222,12 @@ const ArtFashion = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Gallery Opening Menus
+                    Meniuri pentru vernisaje
                   </h3>
                   <p className="text-gray-600">
-                    Our menus are designed to complement your theme, whether
-                    minimalist and chic, bold and avant-garde, or timeless and
-                    elegant.
+                    Meniurile noastre sunt create pentru a completa tema aleasă,
+                    fie ea minimalistă și șic, îndrăzneață și avangardistă sau
+                    atemporală și elegantă.
                   </p>
                 </div>
               </div>
@@ -236,12 +238,12 @@ const ArtFashion = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Fashion Show Catering
+                    Catering pentru prezentări de modă
                   </h3>
                   <p className="text-gray-600">
-                    From refined canapés and signature cocktails to immersive
-                    tasting experiences, every detail is executed with precision
-                    and flair.
+                    De la canapele rafinate și cocktailuri de autor până la
+                    experiențe de degustare captivante, fiecare detaliu este
+                    realizat cu precizie și stil.
                   </p>
                 </div>
               </div>
@@ -252,11 +254,12 @@ const ArtFashion = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Photography Exhibition Dining
+                    Dining pentru expoziții de fotografie
                   </h3>
                   <p className="text-gray-600">
-                    Food presentations that mirror the artistic vision of your
-                    exhibition, creating a cohesive sensory experience.
+                    Prezentări culinare care oglindesc viziunea artistică a
+                    expoziției dumneavoastră, creând o experiență senzorială
+                    unitară.
                   </p>
                 </div>
               </div>
@@ -267,11 +270,11 @@ const ArtFashion = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">
-                    Custom Artistic Presentations
+                    Prezentări artistice personalizate
                   </h3>
                   <p className="text-gray-600">
-                    Let Divine Kitchen elevate your next creative event with
-                    food that's not just served—it's styled.
+                    Lăsați Divine Kitchen să vă înnobileze următorul eveniment
+                    creativ cu mâncare care nu este doar servită — ci stilizată.
                   </p>
                 </div>
               </div>
@@ -280,20 +283,21 @@ const ArtFashion = () => {
             <div className="relative rounded-xl overflow-hidden shadow-xl h-full min-h-[500px]">
               <img
                 src={artf3}
-                alt="Art exhibition catering"
+                alt="Catering pentru expoziție de artă"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Our Creative Event Space
+                  Spațiul nostru pentru evenimente creative
                 </h3>
                 <div className="flex items-center text-white mb-4">
                   <FaMapMarkerAlt className="mr-2 text-amber-300" />
-                  <span>123 Gallery District, Arts Quarter</span>
+                  <span>Districtul Galeriilor 123, Cartierul Artelor</span>
                 </div>
                 <p className="text-white/90">
-                  A versatile space that transforms to match your artistic
-                  vision, with capacity for up to 300 guests.
+                  Un spațiu versatil care se transformă după viziunea
+                  dumneavoastră artistică, cu o capacitate de până la 300 de
+                  invitați.
                 </p>
               </div>
             </div>
@@ -311,7 +315,7 @@ const ArtFashion = () => {
             variants={fadeIn}
             className="text-3xl font-bold text-center text-amber-600 mb-12"
           >
-            Plan Your Artistic Event
+            Planificați-vă evenimentul artistic
           </motion.h2>
 
           <motion.div
@@ -330,7 +334,7 @@ const ArtFashion = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder="Numele dumneavoastră"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -345,7 +349,7 @@ const ArtFashion = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="E-mail"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -360,7 +364,7 @@ const ArtFashion = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="Phone"
+                    placeholder="Telefon"
                     className="pl-10 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -393,7 +397,7 @@ const ArtFashion = () => {
                     onChange={handleInputChange}
                     required
                   >
-                    <option value="">Number of Guests</option>
+                    <option value="">Număr de invitați</option>
                     <option value="50-100">50-100</option>
                     <option value="100-200">100-200</option>
                     <option value="200+">200+</option>
@@ -403,7 +407,7 @@ const ArtFashion = () => {
                 <div className="relative md:col-span-2">
                   <textarea
                     name="message"
-                    placeholder="Tell us about your artistic vision..."
+                    placeholder="Spuneți-ne despre viziunea dumneavoastră artistică..."
                     rows="4"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                     value={formData.message}
@@ -416,7 +420,7 @@ const ArtFashion = () => {
                 type="submit"
                 className="w-full px-6 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
               >
-                Request Artistic Event Consultation
+                Solicitați o consultanță pentru evenimentul artistic
               </button>
             </form>
           </motion.div>

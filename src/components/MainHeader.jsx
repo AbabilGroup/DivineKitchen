@@ -43,15 +43,15 @@ const MainHeader = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", path: "/" },
+    { label: "Acasă", path: "/" },
     {
-      label: "Restaurants",
+      label: "Restaurante",
       subNav: [
         { label: "Lookout Beach", path: "/lookout-beach" },
         { label: "Cafe Beach", path: "/cafe-beach" },
       ],
     },
-    { label: "Menus", path: "/#our-menus", isHash: true },
+    { label: "Meniuri", path: "/#our-menus", isHash: true },
     // {
     //   label: "Wedding Ceremony",
     //   subNav: [
@@ -60,15 +60,15 @@ const MainHeader = () => {
     //   ],
     // },
     {
-      label: "Events",
+      label: "Evenimente",
       subNav: [
-        { label: "Weddings", path: "/events/weddings" },
-        { label: "Corporate Galas", path: "/events/corporate" },
-        { label: "Art & Fashion", path: "/events/art-fashion" },
-        { label: "Events Memories", path: "/events/memories" },
+        { label: "Nunți", path: "/events/weddings" },
+        { label: "Gale corporative", path: "/events/corporate" },
+        { label: "Artă și modă", path: "/events/art-fashion" },
+        { label: "Amintiri din evenimente", path: "/events/memories" },
       ],
     },
-    { label: "Contact Us", path: "/#contact-us", isHash: true },
+    { label: "Contact", path: "/#contact-us", isHash: true },
   ];
 
   const toggleSubmenu = (index, e) => {
@@ -212,7 +212,7 @@ const MainHeader = () => {
             <Link to="/">
               <img
                 src={logo}
-                alt="Company Logo"
+                alt="Logo companie"
                 className={`transition-all duration-500 hover:scale-105 ${
                   scrolled ? "h-9 md:h-11" : "h-10 md:h-14"
                 }`}
@@ -286,7 +286,7 @@ const MainHeader = () => {
             <a
               href="tel:+385997517865"
               className="flex items-center text-gray-800 hover:text-primary text-[15px] font-semibold font-lato whitespace-nowrap mr-4 transition-colors duration-300"
-              aria-label="Call +385 99 751 7865"
+              aria-label="Sunați la +385 99 751 7865"
             >
               <FiPhone className="h-5 w-5 xl:mr-2" />
               <span className="hidden xl:inline">+385 99 751 7865</span>
@@ -298,13 +298,13 @@ const MainHeader = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Book Now
+              Rezervă acum
             </motion.button>
 
             {/* Mobile menu button - right side */}
             <motion.button
               className="lg:hidden text-gray-800 focus:outline-none ml-4"
-              aria-label="Toggle menu"
+              aria-label="Deschide/închide meniul"
               onClick={() => {
                 setMobileMenuOpen(!mobileMenuOpen);
                 setActiveSubmenu(null);
@@ -412,7 +412,7 @@ const MainHeader = () => {
                   }}
                   className="w-full bg-gradient-to-r from-[#ff2709] to-[#ffaa13] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                 >
-                  Book Now
+                  Rezervă acum
                 </button>
               </motion.div>
             </div>

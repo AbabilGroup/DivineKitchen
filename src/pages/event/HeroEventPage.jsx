@@ -84,7 +84,7 @@ const HeroEventPage = () => {
             >
               <img
                 src={"/logo2.png"}
-                alt="Company Logo"
+                alt="Logo companie"
                 className="h-32 w-auto drop-shadow-lg"
               />
             </motion.div>
@@ -94,7 +94,7 @@ const HeroEventPage = () => {
               transition={{ delay: 1, duration: 0.8 }}
               className="text-5xl md:text-7xl font-bold text-white mb-6 font-serif tracking-tight"
             >
-              Unforgettable Events
+              Evenimente de neuitat
             </motion.h1>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
@@ -102,8 +102,8 @@ const HeroEventPage = () => {
               transition={{ delay: 1.2, duration: 0.8 }}
               className="text-xl md:text-2xl text-amber-100 mb-8"
             >
-              Where golden sunsets meet exceptional celebrations along
-              Zandvoort's coast
+              Unde apusurile aurii întâlnesc sărbători excepționale pe coasta
+              Zandvoort
             </motion.p>
             <motion.button
               onClick={() => {
@@ -117,7 +117,7 @@ const HeroEventPage = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Enquire About Events
+              Solicitați informații despre evenimente
             </motion.button>
           </motion.div>
         </motion.div>
@@ -163,14 +163,14 @@ const HeroEventPage = () => {
             variants={itemVariants}
             className="text-3xl md:text-4xl font-bold text-amber-800 mb-6 font-serif"
           >
-            Ready to Create Lasting Memories?
+            Sunteți gata să creați amintiri de durată?
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto mb-8"
           >
-            Our event specialists will craft a completely personalized
-            experience for your celebration
+            Specialiștii noștri în evenimente vor crea o experiență complet
+            personalizată pentru sărbătoarea dumneavoastră
           </motion.p>
           <motion.button
             onClick={() => {
@@ -185,7 +185,7 @@ const HeroEventPage = () => {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            Plan Your Event
+            Planificați-vă evenimentul
           </motion.button>
         </motion.div>
       </motion.div>
